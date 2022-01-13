@@ -31,8 +31,6 @@ Initialized empty Git repository in C:/Users/livem/OneDrive/바탕 화면/first/
 
 
 
-
-
 ![image-20220113110139795](20220112.assets/image-20220113110139795.png)
 
 
@@ -235,29 +233,6 @@ $ git restore --staged 파일명
 touch a.txt
 
 ```
-
-
-
-
-
-
-
-$ git add a.txt
-$ git commit -m "First commit"
-[master (root-commit) 8cf0b55] First commit
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 a.txt
-
-
-
-git config --global user.email "여러분들이메일"
-git config --global user.name "영어id"
-
-$ git config --global -l
-user.email=k.ssafy@gmail.com
-user.name=edutak
-
-git config -- global -l  -> email이랑 name 확인하는 거인듯
 
 
 

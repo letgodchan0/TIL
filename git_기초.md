@@ -236,6 +236,23 @@ touch a.txt
 
 
 
+# 확인해야할 사항
+
+### commit 충돌
+
+![Untitled](git_%EA%B8%B0%EC%B4%88.assets/Untitled.png)
+
+
+
+- 원격 저장소에서 README.MD 파일을 수정하는 등 commit을 변경을 하고 로컬파일에서 파일을 변경하고 push를 하게 되면 commit이 충돌하게 된다.  따라서 `git pull origin master'` 명령어를 통해 원격저장소에서의 최신 버전을 로컬에 적용시켜주어야 할 필요가 있다.
+- 원격저장소에서 commit을 하는 것은 최대한 지양을 하자!
+
+
+
+
+
+
+
 # 요약
 
 ~~~bash

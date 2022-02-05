@@ -49,6 +49,7 @@ for i in range(5):
 
 ## 표
 표 같은 경우, 아래와 같이 구조를 잡아주어야 한다. 
+
 ![](markdown.assets/image.png)
 
 | a    | b    |
@@ -57,6 +58,7 @@ for i in range(5):
 
 ## 이미지
 이미지는 이와 같은 형태로 `![](넣고 싶은 이미지의 주소를 삽입하면 된다)` 작성하면 된다.
+
 ![](markdown.assets/image-16420790285801.png)
 
 

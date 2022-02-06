@@ -176,7 +176,7 @@
   ```css
   # css
   # p의 형제 요소 중 바로 뒤에 위치하는 span 요소 하나를 선택
-  p ~ span {
+  p + span {
       color: red;
   }
   ```

@@ -133,7 +133,6 @@
 ```
 
 - box 클래스에 적용하는 css를 보면 margin 에서 `auto`라는 것이 있는데, 저 코드를 해석 하면, **위 아래 여백을 10px 정도 주고 좌 우는 `auto`, 즉 양쪽 동일하게 여백을 맞춰준다는 의미이다.** 결과적으로 사이트 중앙에 위치하는 것을 볼 수 있다. 
-
 - box-sizing은 박스의 크기를 어떤 것을 기준으로 계산할지를 정하는 속성으로 기본값은 `content-box`이다.
   - content-box : 컨텐츠 영역을 기준으로 크기를 정함
   - border-box : 테두리를 기준으로 크기 정함
@@ -142,6 +141,10 @@
 - box의 `width`를 100으로 주었지만, `box-sizing` 속성의 값을 다르게 주면 박스의 크기가 달라진다.
   - content-box값을 주면 컨텐츠 영역의 너비가 100px이고 테두리를 포함한 너비는 142px이다.
   - border-box 값을 주면, 테두리를 포함한 너비가 100px이고 켄텐츠 영역의 너비는 58이다. 
+
+![image-20220206204220033](CSS_Box_model.assets/image-20220206204220033.png)
+
+### content-box vs border-box
 
 ![image-20220206000739134](CSS_Box_model.assets/image-20220206000739134.png)
 

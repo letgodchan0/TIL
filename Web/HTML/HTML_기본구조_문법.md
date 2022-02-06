@@ -144,7 +144,7 @@
 
 - table의 각 영역을 명시하기 위해 `<thead>`, `<tbody>`, `<tfoot>` 요소를 활용
 
-![image-20220203210445129](HTML_%EA%B8%B0%EC%B4%88.assets/image-20220203210445129.png)
+![image-20220203210445129](HTML_%EA%B8%B0%EB%B3%B8%EA%B5%AC%EC%A1%B0_%EB%AC%B8%EB%B2%95.assets/image-20220203210445129.png)
 
 - `<tr>` 으로 가로 줄을 구성하고 내부에는 `<th>` 혹은 `<td>`로 세을 구성한다.
 - colspan, rowspan 속성을 활용하여 셀을 병합한다.

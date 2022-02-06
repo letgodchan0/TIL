@@ -144,7 +144,7 @@
 
 ![image-20220206204220033](CSS_Box_model.assets/image-20220206204220033.png)
 
-### content-box vs border-box
+### content-box와 border-box 차이
 
 ![image-20220206000739134](CSS_Box_model.assets/image-20220206000739134.png)
 

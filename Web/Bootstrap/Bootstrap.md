@@ -1,6 +1,6 @@
 # 🌱 Bootstrap
 
-- [항상 참고 해야하는 사이트](https://getbootstrap.com/docs/5.1/utilities/spacing/#margin-and-padding)
+- [항상 참고 해야 할 사이트](https://getbootstrap.com/docs/5.1/utilities/spacing/#margin-and-padding)
 - 일반적인 부스트트랩 사용할 때 링크와 스크립트에 각각 `css` 파일과 `js` 파일을 삽입해야 한다.
 
 ```html

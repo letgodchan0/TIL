@@ -48,3 +48,7 @@ ___
 
   - [Bootstrap 기본](https://github.com/letgodchan0/TIL/blob/main/Web/Bootstrap/Bootstrap.md)
   - [Bootstrap 그리드](https://github.com/letgodchan0/TIL/blob/main/Web/Bootstrap/Bootstrap_grid_system.md)
+
+## 자료구조 & 알고리즘
+
+- [Array 1 - 버블 정렬, 카운팅 정렬, 완전 탐색, 그리디](https://github.com/letgodchan0/TIL/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%B0%B0%EC%97%B4%201.md)

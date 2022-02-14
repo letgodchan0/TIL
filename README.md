@@ -51,4 +51,4 @@ ___
 
 ## 자료구조 & 알고리즘
 
-- [Array 1 - 버블 정렬, 카운팅 정렬, 완전 탐색, 그리디](https://github.com/letgodchan0/TIL/blob/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%B0%B0%EC%97%B4%201.md)
+- [Array 1 - 버블 정렬, 카운팅 정렬, 완전 탐색, 그리디](https://github.com/letgodchan0/TIL/blob/main/aps/%EB%B0%B0%EC%97%B4%201.md)

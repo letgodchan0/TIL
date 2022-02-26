@@ -272,6 +272,7 @@ arr = list(map(int, input().split()))
 adj = [[0] * (v+1) for _ in range(v+1)]
 # 인접 리스트
 adjList = [[] for _ in range(v+1)]
+
 for i in range(e):
     n1, n2 = arr[i*2], arr[i*2+1]
     adj[n1][n2] = 1   # n1과 n2는 인접

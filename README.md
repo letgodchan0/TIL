@@ -59,3 +59,5 @@ ___
   - [패턴매칭, KMP 알고리즘, 보이어-무어 알고리즘](https://github.com/letgodchan0/TIL/blob/main/aps/String%201.md)
 - Stack
   - [스택, 재귀호출, Memoization & DP, DFS](https://github.com/letgodchan0/TIL/blob/main/aps/Stack%201.md)
+  - [스택, 계산기-후위표기법, 백트래킹, 부분집합, 순열, 분할정복,  퀵 정렬](https://github.com/letgodchan0/TIL/blob/main/aps/Stack%202.md)
+

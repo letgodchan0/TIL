@@ -28,14 +28,14 @@
 
 ## Web framework
 
-**Framework Architecture**
+### Framework Architecture
 
 - MVC Design Pattern (model - view - controller)
 - 소프트웨어 공학에서 사용되는 디자인 패턴 중 하나
 - 사용자 인터페이스로부터 프로그램 로직을 분리하여 애플리케이션의 시각적 요소나 이면에서 실행되는 부분을 서로 영향 없이 쉽게 고칠 수 있는 애플리케이션을 만들 수 있음
 - Django는 **<u>MTV Pattern</u>**이라고 함
 
-**MTV Pattern**
+### MTV Pattern
 
 - Model
   - 응용프로그램의 데이터 구조를 정의하고 데이터베이스의 기록을 관리 (추가, 수정, 삭제)
@@ -54,7 +54,7 @@
 
 ## Django 환경설정
 
-### 1.가상환경 생성 및 활성화
+### 1. 가상환경 생성 및 활성화
 
 > 프로젝트별로 pip로 설치되는 패키지를 독립적으로 관리하기 위해 설정해주는 것으로 장고 프로젝트를 가상환경 내에서 설치하고 실행한다.
 >
@@ -78,7 +78,7 @@ $ deactivate
 
 ### 2. Django 설치 및 실행
 
-<u>**설치**</u>
+### <u>설치</u>
 
 ```bash
 # 3.2.12 버전 설치
@@ -98,14 +98,14 @@ $ pip install django==3.2.12
   - `wsgi.py` :Django 애플리케이션이 웹 서버와 연결 및 소통하는 것을 도움
   - `manage.py` : Django 프로젝트와 다양한 방법으로 상호작용 하는 커맨드라인 유틸리티
 
-<u>**프로젝트 생성**</u>
+### <u>프로젝트 생성</u>
 
 ```bash
 # 프로젝트 이름에는 python이나 django에서 사용중인 키워드 X, '-'(하이픈 X)
 $ django-admin startproject 프로젝트 명 .
 ```
 
-<u>**서버 활성화**</u>
+### <u>서버 활성화</u>
 
 ```bash
 # 서버 실행
@@ -127,14 +127,14 @@ $ python manage.py runserver
 - `test.py` : 프로젝트의 테스트 코드를 작성하는 곳
 - `views.py` : view 함수들이 정의 되는 곳
 
-<u>**Application 생성**</u>
+### <u>Application 생성</u>
 
 ```bash
 # 일반적으로 Application명은 복수형으로 하는 것을 권장
 $ python manage.py startapp 하고싶은앱이름s
 ```
 
-<u>**Application 등록**</u>
+### <u>Application 등록</u>
 
 > app을 생성하고 나면 프로젝트 디렉토리와 앱 디렉토리가 같은 레벨에 생성되기 때문에, 앱이 프로젝트에 포함되어있게 하려면 따로 등록을 해주어야 한다. 주의해야 할 점은 먼저 등록하고 생성하면 앱이 생성되지 않기 때문에 반드시 먼저 생성하고 등록을 진행해야 한다.
 
@@ -253,8 +253,6 @@ def greeting(request):
 <p>제가 가장 좋아하는 음식은 {{ foods }} 입니다.</p>
 <p>저는 사실  {{ foods.0 }}를 가장 좋아합니다. </p>
 ```
-
-
 
 ### DTL Syntax (2/4) - Filters
 

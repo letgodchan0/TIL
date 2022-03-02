@@ -49,15 +49,21 @@ ___
   - [Bootstrap 기본](https://github.com/letgodchan0/TIL/blob/main/Web/Bootstrap/Bootstrap.md)
   - [Bootstrap 그리드](https://github.com/letgodchan0/TIL/blob/main/Web/Bootstrap/Bootstrap_grid_system.md)
 
+## Django
+
+- [django 01 - 설치 및 프로젝트&앱 생성, 요청과 응답, Template](https://github.com/letgodchan0/TIL/blob/main/Django/Django%2001.md)
+
+
+
 ## 자료구조 & 알고리즘
 
 - Array
     - [Array 1 - 버블 정렬, 카운팅 정렬, 완전 탐색, 그리디](https://github.com/letgodchan0/TIL/blob/main/aps/Array%201.md)
     - [Array 2 - 부분집합 생성, 이진 탐색, 선택 정렬](https://github.com/letgodchan0/TIL/blob/main/aps/Array%202.md)
-
 - String
   - [패턴매칭, KMP 알고리즘, 보이어-무어 알고리즘](https://github.com/letgodchan0/TIL/blob/main/aps/String%201.md)
 - Stack
   - [스택, 재귀호출, Memoization & DP, DFS](https://github.com/letgodchan0/TIL/blob/main/aps/Stack%201.md)
   - [스택, 계산기-후위표기법, 백트래킹, 부분집합, 순열, 분할정복,  퀵 정렬](https://github.com/letgodchan0/TIL/blob/main/aps/Stack%202.md)
-
+- Queue
+    - [선형 큐, 원형 큐, BFS ](https://github.com/letgodchan0/TIL/blob/main/aps/Queue.md)

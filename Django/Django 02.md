@@ -229,3 +229,21 @@ urlpatterns = [
 ]
 ```
 
+> 마지막으로 app이 많아지다 보면 비슷한 app이름 이 생기게 된다. 이를 위해 app_name을 지정해서 app_name에 해당하는 별칭인 것을 알려주어야 한다!
+
+```python
+# articles/urls.py
+from django.urls import path
+from . import views
+
+app_name = 'articles'
+
+urlpatterns = [
+    path('catch/', views.catch, name='catch'),
+
+]
+
+# catch.html
+<a href="{% url 'articles:throw' %}">클릭</a>
+```
+

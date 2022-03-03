@@ -229,7 +229,7 @@ urlpatterns = [
 ]
 ```
 
-> 마지막으로 app이 많아지다 보면 비슷한 app이름 이 생기게 된다. 이를 위해 app_name을 지정해서 app_name에 해당하는 별칭인 것을 알려주어야 한다!
+> 마지막으로 app이 많아지다 보면 비슷한 app이름 이 생기게 된다. 이를 위해 네임스페이스 (app_name)을 지정해서 app_name에 해당하는 별칭인 것을 알려주어야 한다!
 
 ```python
 # articles/urls.py

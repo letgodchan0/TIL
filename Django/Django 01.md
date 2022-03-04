@@ -399,6 +399,7 @@ def dinner(request):
 {% endblock content %}
 
 # index.html
+# extends할 때는 무조건 최상단에 적어주어야 한다!
 {% block extends 'base.html' %}
 
 {% block content %}
@@ -446,5 +447,4 @@ def dinner(request):
   - 대다수의 동적 웹사이트는 공통 header, footer, navbar 같은 사이트 공통 디자인을 갖는다.
   - Django 템플릿 시스템은 이러한 요소를 한 곳에 저장하기 쉽게 하여 중복 코드를 없애야 한다.
   - 이것이 템플릿 상속의 기초가 되는 철학!
-
 

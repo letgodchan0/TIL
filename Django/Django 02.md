@@ -247,3 +247,75 @@ urlpatterns = [
 <a href="{% url 'articles:throw' %}">클릭</a>
 ```
 
+namespace
+
+templates namespace
+
+이름공간 또는 네임스페이스는 객체를 구분할 수 있는 범위를 나타내는 말로 일반적으로 하나의 이름 공간에서는 하나의 이름이 단 하나의 객체만을 가리키게된다.
+
+프로그래밍을 하다 보면 모든 변수명과 
+
+그래서 장고에서는
+
+1. 서로 다른 app의 같은 이름을 가진 url name은 이름 공간을 설정해서 구분
+2. templates, static 등 장고에서는 정해진 경로 하나로 모아서 보기 때문에 **중간에 폴더를 임의로 만들어 줌**으로써 이름공간을 설정
+
+**<u>장고는 기본적으로 각 app/templates까지는 알아서 읽어준다. base/templates도 마찬가지</u>**
+
+articles도 index.html이 있고 pages도 index.html이 있다면, 장고는 기본적으로 모아서 보기 때문에 제일 처음 찾은 index.html을 그냥 화면에 뿌려짐(settings에서 앱을 등록한 순서대로)
+
+따라서 app/templates/여기에 폴더를 하나 만들꺼임/index.html 이런식으로 물리적으로 폴더를 끼워넣는 네임스페이스 방식을 활용한다.  즉 어떤 앱의 텝플
+
+그래서 articles/templates/index.html이 였다면, articles/templates/articles/index.html로 바꾸어 주어야함
+
+그래서 view함수 리턴 값으로 index.html로 되어 있던 것을 articles/index.html로 변경해주어야 한다
+
+---
+
+**url namespace**
+
+url도 마찬가지, 어떤 앱의 url인지 별칭 앞에 하나 더 붙여주어야 한다. 따로 폴더를 생성하는 건 아니고 app_name이라는 값을 설정하는 것! (app_name은 정해진 변수명!!!) 
+
+그래서 `<a href="{% url 'articles:throw' %}">클릭</a>` 이렇게 되는거였음
+
+## static files
+
+서버측에서 미리 준비해 놓고 있는 파일
+
+사용자의 요청에 따라 내용이 바뀌는 것이 아니라 요청한 것을 그대로 보여주는 파일
+
+예를 들어, 웹 서버는 일반적으로 이미지, 자바 스크립트 또는 CSS와 같은 미리 준비된 추가 파일(움직이지 않는)을 제공해야 함
+
+파일 자체가 고정되어 있고, 서비스 중에도 추가되거나 변경되지 않고 고정되어 있음
+
+Django에서는 이러한 파일들을 static file이라 하고 staticfiles 앱을 통해 정적 파일 관련 기능을 제공한다.
+
+INSTALLED_APPS에 이미 있음
+
+templates와 비슷하게 기본적으로 app/static/이 밑에 정적 파일들을 넣어주어야 함
+
+당연하게 이름공간 이슈가 생김 그래서, templates와 똑같이 
+
+app/static/app/파일명 경로를 작성해준다.
+
+---
+
+settings.py에서 DEBUG = True가 기본 값인데, 배포 단계에서는 False로 바꾸어 주어야함 , 우리의 내부 코드를 노출시키기지 않기 위해
+
+STATIC_ROOT : 개발과정에서 쓰지 않고 배포 단계에서 쓰이는 애
+
+배포 모드라면 아마존이 장고 내의 모든 경로를 추적할 수 없기 때문에 STATIC_ROOT가 모든 STATIC 파일을 물리적으로 모아서 생성해주고 아마존은 STATIC_ROOT를 보고 경로를 추적함
+
+settings.py에 STATIC_ROOT = BASE_DIR / 'staticfiles' 로 두고 python manage.py collectstatic 명령을 하면 장고 내부에서 구동하는데 필요한 모든 정적 파일들이 생김
+
+static 관련해서는 서버가 실행되는 동안 추적 못할 수 있기 때문에 서버 종료후 다시 실행해보기
+
+---
+
+베이스 템플릿 줬던 것 처럼
+
+STATICFILES_DIRS = [
+
+​		BASE_DIR / 'static',
+
+]

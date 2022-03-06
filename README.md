@@ -5,8 +5,7 @@
 ## 매일 배운 내용 기록하기✏️
 ### 👉 [블로그](https://velog.io/@letgodchan0)
 
-___
-</div>
+
 
 ## API
 
@@ -52,7 +51,7 @@ ___
 ## Django
 
 - [django 01 - 설치 및 프로젝트&앱 생성, 요청과 응답, Template](https://github.com/letgodchan0/TIL/blob/main/Django/Django%2001.md)
-- [django 02 - HTML_form, Variable Routing, App url mapping, URL patterns](https://github.com/letgodchan0/TIL/blob/main/Django/Django%2002.md)
+- [django 02 - HTML_form, Variable Routing, Namespace, Static](https://github.com/letgodchan0/TIL/blob/main/Django/Django%2002.md)
 
 
 

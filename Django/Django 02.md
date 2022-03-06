@@ -199,7 +199,9 @@ urlpatterns = [
 # 기존의 a 태그를 보면 앞에 /라는 루트 + url 주소를 입력해주어야 했다.
 
 <a href="/throw/">클릭</a>
+```
 
+```html
 # 이제는 url patterns와 url template tag를 사용하면 다음과 같이 변경할 수 있다.
 
 <a href="{% url 'throw' %}">클릭</a>
@@ -217,19 +219,16 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('index/', views.index, name='index'),
-    path('bts/', views.bts, name='bts'),
-    path('lotto/', views.lotto, name='lotto'),
-    path('mbti/', views.mbti, name='mbti'),
-    path('lunch/', views.lunch, name='lunch'),
-    path('throw/', views.throw, name='throw'),
-    path('catch/', views.catch, name='catch'),
     path('blog/<int:id>/', views.blog, name='blog'),
     path('hello/<name>/', views.hello, name='hello'),
 ]
 ```
 
-> 마지막으로 app이 많아지다 보면 비슷한 app이름 이 생기게 된다. 이를 위해 네임스페이스 (app_name)을 지정해서 app_name에 해당하는 별칭인 것을 알려주어야 한다!
+- 마지막으로 app이 많아지다 보면 동일한 app 이름 이 생기게 된다. **동일한 app 이름이 생기게 되면 `settings`의 ``INSTALLED_APPS`의 적힌 순서대로 찾게 되기 때문에** 제일 위에 APP에서만 링크를 찾게 될 수 있다. 
+
+- 이를 위해 네임스페이스 (app_name)을 설정해서 구분해주어야 한다. 단순히 app이 여러개 이상일 때 사용하는 것이 아닌 장고 권장사항이기 때문에 각 app에 url을 파일을 만들고 app_name을 설정 해준 뒤 include 하도록 한 뒤 네임스페이스를 사용하도록 하자!!!
+
+- 여기서 app_name은 정해진 변수명!
 
 ```python
 # articles/urls.py
@@ -240,82 +239,191 @@ app_name = 'articles'
 
 urlpatterns = [
     path('catch/', views.catch, name='catch'),
-
 ]
 
 # catch.html
 <a href="{% url 'articles:throw' %}">클릭</a>
 ```
 
-namespace
+## Namespace
 
-templates namespace
+> 이름공간 또는 네임스페이스는 객체를 구분할 수 있는 범위를 나타내는 말로 일반적으로 하나의 이름 공간에서는 하나의 이름이 단 하나의 객체만을 가리키게된다.
 
-이름공간 또는 네임스페이스는 객체를 구분할 수 있는 범위를 나타내는 말로 일반적으로 하나의 이름 공간에서는 하나의 이름이 단 하나의 객체만을 가리키게된다.
+## Templates namespace
 
-프로그래밍을 하다 보면 모든 변수명과 
+- 장고는 기본적으로 templates를 찾을 때 각 app/template까지는 알아서 찾아준다. 하지만 서로 다른 app에 동일한 이름(index.html)의 템플릿 파일이 있다면, 제일 처음 찾은(settings에서 앱을 등록한 순서대로) index.html을 화면에 뿌려준다. 이는 장고가 기본적으로 모든 경로를 모아서 보기 때문이다.
 
-그래서 장고에서는
+- 따라서 app/templates(여기까지는 장고가 기본으로 찯음) 뒤에 폴더를 하나 만들어야 한다. 
+  - <u>**app/templates/app/index.html 이런식으로 물리적으로 폴더를 끼워넣는 네임스페이스 방식을 활용 해야 한다.**</u>
+  - 그렇기 때문에 모든 경로도 빠짐없이 물리적으로 만들어준 폴더 이름을 붙여 주어야 하고, view 함수도 마찬가지로 리턴 값이 index.html로 되어 있던 것을 articles/index.html로 변경해주어야 한다!
 
-1. 서로 다른 app의 같은 이름을 가진 url name은 이름 공간을 설정해서 구분
-2. templates, static 등 장고에서는 정해진 경로 하나로 모아서 보기 때문에 **중간에 폴더를 임의로 만들어 줌**으로써 이름공간을 설정
+```python
+# articles/views.py
 
-**<u>장고는 기본적으로 각 app/templates까지는 알아서 읽어준다. base/templates도 마찬가지</u>**
+return render(request, 'articles/index.html')
+```
 
-articles도 index.html이 있고 pages도 index.html이 있다면, 장고는 기본적으로 모아서 보기 때문에 제일 처음 찾은 index.html을 그냥 화면에 뿌려짐(settings에서 앱을 등록한 순서대로)
+```python
+# pages/views.py
 
-따라서 app/templates/여기에 폴더를 하나 만들꺼임/index.html 이런식으로 물리적으로 폴더를 끼워넣는 네임스페이스 방식을 활용한다.  즉 어떤 앱의 텝플
+return render(request, 'pages/index.html')
+```
 
-그래서 articles/templates/index.html이 였다면, articles/templates/articles/index.html로 바꾸어 주어야함
 
-그래서 view함수 리턴 값으로 index.html로 되어 있던 것을 articles/index.html로 변경해주어야 한다
 
----
+## Static files
 
-**url namespace**
+- 서버측에서 미리 준비해 놓고 있는 파일
 
-url도 마찬가지, 어떤 앱의 url인지 별칭 앞에 하나 더 붙여주어야 한다. 따로 폴더를 생성하는 건 아니고 app_name이라는 값을 설정하는 것! (app_name은 정해진 변수명!!!) 
+- 사용자의 요청에 따라 내용이 바뀌는 것이 아니라 요청한 것을 그대로 보여주는 파일
 
-그래서 `<a href="{% url 'articles:throw' %}">클릭</a>` 이렇게 되는거였음
+- 예를 들어, 웹 서버는 일반적으로 이미지, 자바 스크립트 또는 CSS와 같은 미리 준비된 추가 파일(움직이지 않는)을 제공해야 함
 
-## static files
+- 파일 자체가 고정되어 있고, 서비스 중에도 추가되거나 변경되지 않고 고정되어 있음
 
-서버측에서 미리 준비해 놓고 있는 파일
+- Django에서는 이러한 파일들을 static file이라 하고 staticfiles 앱을 통해 정적 파일 관련 기능을 제공한다.
 
-사용자의 요청에 따라 내용이 바뀌는 것이 아니라 요청한 것을 그대로 보여주는 파일
+## Static files 구성
 
-예를 들어, 웹 서버는 일반적으로 이미지, 자바 스크립트 또는 CSS와 같은 미리 준비된 추가 파일(움직이지 않는)을 제공해야 함
+1. django.contrib.staticfiles 앱이 `INSTALLED_APPS`에 있는지 확인INSTALLED_APPS에 이미 있음
+2. setting.py에 `STATIC_URL` 정의
+3. 템플릿에서 static 템플릿 태그를 사용하여 static file이 있는 상대경로를 빌드
+4. 앱에 static file 저장하기 (`my_app/static/my_app/sample.jpg`)
 
-파일 자체가 고정되어 있고, 서비스 중에도 추가되거나 변경되지 않고 고정되어 있음
+## Django template tag
 
-Django에서는 이러한 파일들을 static file이라 하고 staticfiles 앱을 통해 정적 파일 관련 기능을 제공한다.
+- load
+  - 사용자 정의 템플릿 태그 세트를 로드
+  - 로드하는 라이브러리, 패키지에 등록된 모든 태그와 필터를 로드
+- static
+  - STATIC_ROOT에 저장된 정적 파일에 연결
 
-INSTALLED_APPS에 이미 있음
 
-templates와 비슷하게 기본적으로 app/static/이 밑에 정적 파일들을 넣어주어야 함
 
-당연하게 이름공간 이슈가 생김 그래서, templates와 똑같이 
+- templates와 서로 다른 app에 동일한 이름의 파일이 존재할 수 있기 때문에 네임스페이스를 생성해야 한다.
 
-app/static/app/파일명 경로를 작성해준다.
+- 이미지 파일 위치 - `articles/static/articles/images/`
+- static file 기본 경로
+  - `app_name/static/`
 
----
 
-settings.py에서 DEBUG = True가 기본 값인데, 배포 단계에서는 False로 바꾸어 주어야함 , 우리의 내부 코드를 노출시키기지 않기 위해
 
-STATIC_ROOT : 개발과정에서 쓰지 않고 배포 단계에서 쓰이는 애
+## The staticfiles app
 
-배포 모드라면 아마존이 장고 내의 모든 경로를 추적할 수 없기 때문에 STATIC_ROOT가 모든 STATIC 파일을 물리적으로 모아서 생성해주고 아마존은 STATIC_ROOT를 보고 경로를 추적함
+**`STATICFILES_DIRS`**
 
-settings.py에 STATIC_ROOT = BASE_DIR / 'staticfiles' 로 두고 python manage.py collectstatic 명령을 하면 장고 내부에서 구동하는데 필요한 모든 정적 파일들이 생김
+```python
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
+```
 
-static 관련해서는 서버가 실행되는 동안 추적 못할 수 있기 때문에 서버 종료후 다시 실행해보기
+- app/static/ 디렉토리 경로를 사용하는 것(기본 경로) 외에 추가적인 정적 파일 경로 목록을 정의하는 리스트
+- 추가 파일 디렉토리에 대한 전체 경로를 포함하는 문자열 목록으로 작성되어야 함
 
----
+**`STATIC_URL`**
 
-베이스 템플릿 줬던 것 처럼
+```python
+STATIC_URL = '/static/'
+```
+
+- STATIC_ROOT에 있는 정적 파일을 참조 할 때 사용할 URL
+- 개발 단계에서는 실제 정적 파일들이 저장되어 있는 app/static/ 경로 (기본 경로) 및STATICFILES_DIRS에 정의된 추가 경로들을 탐색함
+- 실제 파일이나 디렉토리가 아니며, URL로만 존재 비어 있지 않은 값으로 설정 한다면 반드시 slash(/)로 끝나야 함
+
+
+
+**`STATIC_ROOT`**
+
+- collectstatic이 배포를 위해 정적 파일을 수집하는 디렉토리의 절대 경로
+- django 프로젝트에서 사용하는 모든 정적 파일을 한 곳에 모아 넣는 경로
+- 개발 과정에서 setting.py의 DEBUG 값이 True로 설정되어 있으면 해당 값은 작용되지 않음
+- 직접 작성하지 않으면 django 프로젝트에서는 setting.py에 작성되어 있지 않음
+- 실 서비스 환경(배포 환경)에서 django의 모든 정적 파일을 다른 웹 서버가 직접 제공하기 위함
+- 개발과정에서 쓰지 않고 배포 단계에서 쓰이는 애
+- 배포 모드라면 아마존이 장고 내의 모든 경로를 추적할 수 없기 때문에 STATIC_ROOT가 모든 STATIC 파일을 물리적으로 모아서 생성해주고 아마존은 STATIC_ROOT를 보고 경로를 추적함
+- static이 반영 안되어 있다면, 서버가 실행되는 동안 추적 못할 수 있기 때문에 서버 종료후 다시 실행해보기
+
+> [참고] **collectstatic**
+>
+> - 프로젝트 배포 시 흩어져있는 정적 파일들을 모아 특정 디렉토리로 옮기는 작업
+> - settings.py에 STATIC_ROOT = BASE_DIR / 'staticfiles' 로 두고 python manage.py collectstatic 명령을 하면 장고 내부에서 구동하는데 필요한 모든 정적 파일들이 생김
+>
+> ```python
+> # settings.py 예시
+> 
+> STATIC_ROOT = BASE_DIR / 'staticfiles'
+> $ python manage.py collectstatic
+> ```
+
+
+
+## Static file 사용하기
+
+1. 기본경로
+
+   - `article/static/articles/` 경로에 이미지 파일 위치
+
+     ```jinja
+     <!-- articles/index.html -->
+     
+     {% extends 'base.html' %}
+     {% load static %}
+     
+     {% block content %}
+       <img src="{% static 'articles/sample.png' %}" alt="sample">
+       ...
+     {% endblock %}
+     ```
+
+   - 이미지 파일 위치 - `articles/static/articles/`
+
+   - static file 기본 경로
+
+     - `app_name/static/`
+
+2. 추가 경로
+
+   - `static/` 경로에 CSS 파일 위치
+
+```jinja
+<!-- base.html -->
+
+<head>
+  {% block css %}{% endblock %}
+</head>
+```
+
+```python
+# settings.py
 
 STATICFILES_DIRS = [
-
-​		BASE_DIR / 'static',
-
+    BASE_DIR / 'static',
 ]
+```
+
+```html
+<!-- articles/index.html -->
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+{% endblock %}
+```
+
+```css
+/* static/style.css */
+
+h1 {
+    color: crimson;
+}
+```
+
+
+
+**STATIC_URL 확인해보기**
+
+![Snipaste_2022-03-04_16-17-39](Django%2002.assets/Snipaste_2022-03-04_16-17-39-16465760470623.png)
+

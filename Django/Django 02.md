@@ -63,7 +63,9 @@ urlpatterns = [
    # form에 담긴 내용을 전달받음
    path('catch/', views.catch), 
 ]
+```
 
+```python
 # views.py
 def throw(request):
     return render(request, 'throw.html')
@@ -77,7 +79,9 @@ def catch(request):
         'message' : message
     }
     return render(request, 'catch.html', context)
+```
 
+```html
 # throw.html
 <form action="/catch/" method="GET">
   <label for="message">메시지</label>
@@ -106,7 +110,9 @@ urlpatterns = [
     path('blog/<int:id>/', views.blog),
     path('hello/<name>/', views.hello),
 ]
+```
 
+```python
 # veiws.py
 def blog(request, id):
     context = {
@@ -149,9 +155,11 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-
+	path('index/', views.index. name='index'),
 ]
+```
 
+```python
 # articles/urls.py
 from django.urls import path
 from . import views
@@ -175,6 +183,8 @@ urlpatterns = [
     path('pages/', include('pages.urls')),
 ]
 
+# http://127.0.0.1:8000/articles/index/ 라고 치면,
+# articles 앱의 하위의 views의 index 함수가 실행된다!
 ```
 
 ### <u>include()</u>
@@ -240,7 +250,9 @@ app_name = 'articles'
 urlpatterns = [
     path('catch/', views.catch, name='catch'),
 ]
+```
 
+```html
 # catch.html
 <a href="{% url 'articles:throw' %}">클릭</a>
 ```
@@ -297,8 +309,6 @@ return render(request, 'pages/index.html')
   - 로드하는 라이브러리, 패키지에 등록된 모든 태그와 필터를 로드
 - static
   - STATIC_ROOT에 저장된 정적 파일에 연결
-
-
 
 - templates와 서로 다른 app에 동일한 이름의 파일이 존재할 수 있기 때문에 네임스페이스를 생성해야 한다.
 

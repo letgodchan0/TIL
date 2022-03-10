@@ -50,13 +50,13 @@ class Article(models.Model):
 
 - 아래와 같은 구문이 나오게 되는데 기존에 DB에는 `title`과 `content` 속성의 값들로만 튜플이 구성되어 있는데, 새로운 속성들이 추가 된다면 이전에 있던 튜플에도 새로운 속성에 해당하는 값을 부여해주어야 하는 DB의 무결성 원칙을 따라야 한다!
 
-![image-20220310235924545](C:/Users/livem/Desktop/letgodchan0/TIL/Django/Django%2003.assets/image-20220310235924545.png)
+![image-20220311013544512](Django%20-%20Model.assets/image-20220311013544512.png)
 
 - `created_at` 필드에 대한 default 값 설정으로 1을 입력후 enter
   - 옵션 1) 내가 지금 직접 디폴트 값을 줄게 => 여기서는 1번 선택함
   - 옵션 2) 미안. 나 종료하고 models.py에서 내가 직접 설정할게
 
-![image-20220311000135500](C:/Users/livem/Desktop/letgodchan0/TIL/Django/Django%2003.assets/image-20220311000135500.png)
+![image-20220311013555485](Django%20-%20Model.assets/image-20220311013555485.png)
 
 - `timezone.now` 함수값 자동설정 => 빈 값 상태에서 enter 클릭 => migrate를 통해 models.py 수정사항 반영
 - `auto_now_add`

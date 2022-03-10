@@ -52,8 +52,9 @@
 
 - [django 01 - 설치 및 프로젝트&앱 생성, 요청과 응답, Template](https://github.com/letgodchan0/TIL/blob/main/Django/Django%2001.md)
 - [django 02 - HTML_form, Variable Routing, Namespace, Static](https://github.com/letgodchan0/TIL/blob/main/Django/Django%2002.md)
+- [django 03 - Model](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Model.md)
 
-
+- [django 04 - CRUD](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20CRUD.md)
 
 ## 자료구조 & 알고리즘
 

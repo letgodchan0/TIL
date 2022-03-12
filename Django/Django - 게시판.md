@@ -208,7 +208,7 @@ def new(request):
 
 - 날짜를 입력 받고 싶을 때는 `input` 속성의 `type`을 `date`로 주면 된다. 그럼 우리가 흔히 보는 달력 모양이 나오고 선택할 수 있게 된다. 
 
-![image-20220313005900713](C:/Users/livem/Desktop/pjt%EC%8B%A4%EC%8A%B5/pjt05/README.assets/image-20220313005900713.png)
+![image-20220313005900713](Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.assets/image-20220313005900713.png)
 
 
 
@@ -227,7 +227,7 @@ def new(request):
 
 - 선택 목록을 생성할 때는 `select` 태그를 생성하고 하위에 `option` 태그를 생성한다. 여기서 `value` 값이 서버에 전달된다.
 
-![image-20220313010552935](C:/Users/livem/Desktop/pjt%EC%8B%A4%EC%8A%B5/pjt05/README.assets/image-20220313010552935.png)
+![image-20220313010552935](Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.assets/image-20220313010552935.png)
 
 ```html
 <form action="{% url 'movies:create' %}" method="GET">
@@ -299,7 +299,7 @@ def detail(request, pk):
 
 - `movie = Movie.objects.get(pk=pk)` 을 통해 DB에서 Movie의 필드타입을 속성으로 하는 테이블에서 `pk`가 인자로 입력되는 `pk`값일 때의 데이터들을 `movie`에 담아준다. 이 데이터들을 가지고 `detail.html`을 렌더링한다.
 
-![image-20220313015245406](C:/Users/livem/Desktop/pjt%EC%8B%A4%EC%8A%B5/pjt05/README.assets/image-20220313015245406.png)
+![image-20220313015245406](Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.assets/image-20220313015245406.png)
 
 - `pk` 값에 따라 작성했던 영화 데이터를 기반으로 한 `detail.html` 화면으로 응답하게 된다. 
 
@@ -350,7 +350,7 @@ def edit(request, pk):
 
 - 추가적으로 `select` 태그에 `size` 속성을 주게 되면 화면에 선택 목록들이 접혀있지 않고 열려있게 된다. 이거 접고 싶어서 엄청 찾아봤는데... 그냥 `size` 속성 안주면 된다....
 
-![image-20220313010552935](C:/Users/livem/Desktop/pjt%EC%8B%A4%EC%8A%B5/pjt05/README.assets/image-20220313010552935.png)
+![image-20220313010552935](Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.assets/image-20220313010552935-16471106518311.png)
 
 ## `update` - 영화 데이터 수정
 
@@ -433,7 +433,7 @@ def index(request):
 
 - 제일 처음 `index.html`을 생성했을 때는 DB에 저장되어 있는 내용이 없었기 때문에 조회를 할 수 없었다. 모든 화면과 함수가 구성된 지금 DB에서 가져온 값을 통해 화면을 다음과 같이 구성할 수 있다.
 
-![image-20220313022032836](C:/Users/livem/Desktop/pjt%EC%8B%A4%EC%8A%B5/pjt05/README.assets/image-20220313022032836.png)
+![image-20220313022032836](Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.assets/image-20220313022032836.png)
 
 ## Admin 페이지 생성
 
@@ -444,7 +444,7 @@ def index(request):
 $ python manage.py createsuperuser
 ```
 
-![image-20220311003026402](C:/Users/livem/Desktop/pjt%EC%8B%A4%EC%8A%B5/pjt05/README.assets/image-20220311003026402.png)
+![image-20220311003026402](Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.assets/image-20220311003026402.png)
 
 ### `admin` 등록
 
@@ -462,7 +462,7 @@ admin.site.register(Movie)
 
 - `list_display`은 `models.py`에서 정의한 각각의 속성들의 레코드를 `admin`페이지에 출력하도록 해준다!
 
-![image-20220313022931474](C:/Users/livem/Desktop/pjt%EC%8B%A4%EC%8A%B5/pjt05/README.assets/image-20220313022931474.png)
+![image-20220313022931474](Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.assets/image-20220313022931474.png)
 
 
 

@@ -182,9 +182,55 @@ Article.object.filter(title='찾아봐')[0].content
 >>> a2.delete()
 ```
 
+## HTTP method
 
+### `GET`
 
+- 특정 리소스를 가져오도록 요청할 때 사용
+- 반드시 데이터를 가져올 때만 사용해야 한다!!!
+- DB에 변화를 주지 않고, `CRUD`에서 `R` 역할을 담당한다
 
+### `POST`
+
+- 서버로 데이터를 전송할 때 사용하고 리소스를 생성/변경하기 위해 데이터를 HTTP body에 담아 전송한다
+- 서버에 변경사항을 만들고, `CRUD`에서 `C/U/D` 역할을 담당한다
+- `GET`을 사용하면 `/article/create/?title=제목&content=내용` 의 형태로 서버 로그에 모든 정보가 주소록에 나타나게 된다. 따라서 정보를 숨겨 보내기 위해 `form` 태그의 `method` 속성의 값을 `GET`이 아닌 `POST`로 변경해야 한다. 일반적으로 보안이 요구되는 것을 요청할 때는 `POST` 형식으로 요청을 받아야 한다!
+
+```html
+# edit.html
+
+<form action="{% url 'articles:update' article.pk %}" method="POST">
+    {% csrf_token %}
+    ....
+</form>
+```
+
+```python
+# articles/views.py
+
+def update(request, pk):
+    # 1. 값 가져오기
+    title = request.POST.get('title')
+    content = request.POST.get('content')
+   	....
+    return redirect('articles:detail', article.pk)
+```
+
+### `CSRF`
+
+- '사이트 간 요청 위조' 라는 공격 방법 중 하나로 Django는 기본적으로 이 공격을 방지할 수 있는 `CSRF token` 탬플릿을 제공한다.
+- 사용자의 데이터에 임의의 난수 값을 부여해, 매 요청마다 해당 난수 값을 포함시켜 전송시키도록 하고 이후 서버에서 요청을 받을 때마다 전달된 token 값이 유효한지 검증한다.
+- 일반적으로 데이터 변경이 가능한 POST, PATCH, DELETE Method 등에 적용 한다 (GET 제외)
+
+```html
+<form action="#" method="POST">
+    {% csrf_token %}
+    ....
+</form>{}
+```
+
+- input type이 hidden으로 작성되며 value는 Django에서 생성한 hash 값으로 설정된다.
+- 해당 태그 없이 요청을 보내면 Django 서버는 403 forbidden을 응답한다.
 
 
 

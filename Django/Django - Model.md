@@ -154,6 +154,6 @@ class ArticleAdmin(admin.ModelAdmin):
 admin.site.register(Article)
 ```
 
-- `list_day` - models.py에 정의한 각각의 속성 들의 값(레코드)을 admin 페이지에 출력하도록 설정
+- `list_display` - models.py에 정의한 각각의 속성 들의 값(레코드)을 admin 페이지에 출력하도록 설정
 
 - `list_filter`, `list_display_links` 등 다양한 [ModelAdmin options](https://docs.djangoproject.com/en/3.2/ref/contrib/admin/#modeladmin-options) 참고

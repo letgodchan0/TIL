@@ -133,7 +133,7 @@ LANGUAGE_CODE = 'ko-kr'
 TIME_ZONE = 'Asia/Seoul'
 ```
 
-## `index` - 전체 영화 조회
+## index - 전체 영화 조회
 
 ```python
 # movies/urls.py
@@ -156,7 +156,7 @@ def index(request):
 
 - 지금은 `index` 함수가 단순히 `index.html`을 렌더링 하지만, 추후 사용자가 작성해서 DB에 저장되어 있는 영화들의 정보를 가져와서 `context`로 같이 렌더링 해줄 예정
 
-## `new` - 새로운 영화 작성 페이지
+## new - 새로운 영화 작성 페이지
 
 ```python
 # movies/urls.py
@@ -246,7 +246,7 @@ def new(request):
 
 - 일반적으로 좀 긴 글(?)을 작성할 때는 `input` 태그를 사용하기보다는 `textarea`속성을 사용한다. `cols`와 `rows` 값을 자유롭게 해서 우리가 글을 작성하는 테두리(?)의 사이즈를 조정해줄 수 있다.
 
-## `create` - 입력한 영화 데이터 저장
+## create - 입력한 영화 데이터 저장
 
 ```python
 # movies/urls.py
@@ -278,9 +278,9 @@ def create(request):
 
 - `request.GET`를 하면, 사용자가 입력한 값들이 `QueryDict`형태로 들어 오기 때문에 `get` 메서드를 사용하는데 괄호 안에 들어가는 내용은 `input`에서 `name`으로 주었던 값이다.
 - 사용자가 입력한 값을 받아오면 이를 DB에 저장해주어야 한다. 따라서 `models.py`에서 생성했던 `Movie` 클래스를 가져와서 `movie = Movie()`를 통해 `movie` 인스턴스를 생성하고 사용자로부터 입력받은 값을 각각 할당하고 저장한다. 
-- `create` 함수는 `create.html`로 렌더링을 하는 것이 아니라 `(movies:detail, pk) ` 을 리다이렉트 하는데, `new.html`에서 사용자가 입력을 하고 제출을 하면, 입력한 내용을 보여주는 `detail.html`이 화면에 렌더링 되어야 한다.  따라서 `create`에서는 사용자가 작성한 데이터들을 DB에 저장만 하게 되고, 생성되는 `pk` 값을 통해 `(movies:detail, pk) ` 을 리다이렉트 하면서, `pk`에 해당하는 영화 데이터의 상세정보가 화면에 보여질 수 있도록  `detail.html`을 따로 생성해야 한다.
+- `create` 함수는 `create.html`로 렌더링을 하는 것이 아니라 `(movies:detail, pk)` 을 리다이렉트 하는데, `new.html`에서 사용자가 입력을 하고 제출을 하면, 입력한 내용을 보여주는 `detail.html`이 화면에 렌더링 되어야 한다.  따라서 `create`에서는 사용자가 작성한 데이터들을 DB에 저장만 하게 되고, 생성되는 `pk` 값을 통해 `(movies:detail, pk)` 을 리다이렉트 하면서, `pk`에 해당하는 영화 데이터의 상세정보가 화면에 보여질 수 있도록  `detail.html`을 따로 생성해야 한다.
 
-## `detail` - 단일 영화 데이터 조회
+## detail - 단일 영화 데이터 조회
 
 ```python
 # movies/urls.py
@@ -309,7 +309,7 @@ def detail(request, pk):
 
 - `pk` 값에 따라 작성했던 영화 데이터를 기반으로 한 `detail.html` 화면으로 응답하게 된다. 
 
-## `edit` - 수정 대상 영화 데이터 조회
+## edit - 수정 대상 영화 데이터 조회
 
 ```python
 # movies/urls.py
@@ -358,7 +358,7 @@ def edit(request, pk):
 
 ![image-20220313010552935](Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.assets/image-20220313010552935-16471106518311.png)
 
-## `update` - 영화 데이터 수정
+## update - 영화 데이터 수정
 
 ```python
 # movies/urls.py
@@ -386,7 +386,7 @@ def update(request, pk):
 
 - `create`와 마찬가지로 수정한 내용을 DB에 저장하는 과정이 필요하다. 수정한 내용을 제출하게 되면 `movies:create`로 이동하고 `create` 함수를 실행하게 되는데 여기서 수정했던 내용을 DB에 저장하고 `movies:deatil`을 리다이렉트 한다. 이 과정을 통해 사용자가 영화 수정 후 제출을 하면 수정한 내용이 반영된 `detail.html`이 화면에 보이게 된다.
 
-## `delete` - 단일 영화 데이터 삭제
+## delete - 단일 영화 데이터 삭제
 
 ```python
 # movies/urls.py
@@ -407,7 +407,7 @@ def delete(request, pk):
 
 - `detail.html`에서 `delete` 버튼을 누르게 되면 `movies:delete`로 이동해서 `delete` 함수가 실행하게 된다. 이 함수 안에서 pk에 해당하는 영화 데이터가 DB에서 삭제하게 되고 이를 반영해야 하기 때문에 `redirect`를 하게 된다. 
 
-## `index` - 전체 영화 조회
+## index - 전체 영화 조회
 
 ```python
 # movies/index.py

@@ -22,7 +22,7 @@ $ pip install -r requirements.txt
 ### 3. 장고 프로젝트 생성 및 서버 실행
 
 ```bash
-$ django-admin startproject pjt05
+$ django-admin startproject pjt05 .
 $ python manage.py runserver
 ```
 
@@ -147,14 +147,14 @@ urlpatterns = [
 ]
 ```
 
-- 지금은 `index` 함수가 단순히 `index.html`을 렌더링 하지만, 추후 사용자가 작성해서 DB에 저장되어 있는 영화들의 정보를 가져와서 `context`로 같이 렌더링 해줄 예정
-
 ```python
 # movies/views.py
 
 def index(request):
     return render(request, 'movies/index.html')
 ```
+
+- 지금은 `index` 함수가 단순히 `index.html`을 렌더링 하지만, 추후 사용자가 작성해서 DB에 저장되어 있는 영화들의 정보를 가져와서 `context`로 같이 렌더링 해줄 예정
 
 ## `new` - 새로운 영화 작성 페이지
 
@@ -184,6 +184,8 @@ def new(request):
 
 - `new.html` 에서는 `form` 태그를 활용해서 사용자가 영화의 상세정보를 입력하고, 그 내용을 DB에 저장을 해야한다. 각 항목에 대해 사용자들이 작성한 내용은 `input`의 `name`으로 할당되고  `action` 속성의 값으로 입력한 `url`로 이동하게 된다. 여기서는 `movies/create`로 이동하게 된다.  
 
+#### `number` - 정수 입력받기
+
 ```html
 # new.html
 <form action="{% url 'movies:create' %}" method="GET">
@@ -195,6 +197,8 @@ def new(request):
 ```
 
 - 숫자를 입력받을 때는 `input` 속성의 `type`을 `number`로 주면 되고 `float`로 주고 싶다면, 뒤에 `step`라는 속성을 주고 값을 `0.5`로 주면 된다!
+
+#### `date` - 달력모양 표시
 
 ```html
 # new.html
@@ -210,7 +214,7 @@ def new(request):
 
 ![image-20220313005900713](Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.assets/image-20220313005900713.png)
 
-
+#### `select` - 선택목록 생성
 
 ```html
 <form action="{% url 'movies:create' %}" method="GET">
@@ -228,6 +232,8 @@ def new(request):
 - 선택 목록을 생성할 때는 `select` 태그를 생성하고 하위에 `option` 태그를 생성한다. 여기서 `value` 값이 서버에 전달된다.
 
 ![image-20220313010552935](Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.assets/image-20220313010552935.png)
+
+#### `textarea` - 긴 글(?) 받는 태그
 
 ```html
 <form action="{% url 'movies:create' %}" method="GET">

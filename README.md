@@ -65,7 +65,7 @@
 - [sql 기초](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EA%B8%B0%EC%B4%88.md)
 
 - [sql 문법 - Insert, Select, Limit, Offset, Distinct, Update](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EB%AC%B8%EB%B2%95.md)
-- [sql - csv 파일 적용, Where, Aggregate, Like, Order By, Group By, ALTER](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EB%AC%B8%EB%B2%95%202.md)
+- [sql 문법 - csv 파일 적용, Where, Aggregate, Like, Order By, Group By, ALTER](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EB%AC%B8%EB%B2%95%202.md)
 
 ## 자료구조 & 알고리즘
 

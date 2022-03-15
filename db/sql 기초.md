@@ -27,6 +27,54 @@
 5. BLOB
    - 입력된 그대로 정확히 저장된 데이터 (별다른 타입 없이 그대로 저장)
 
+## SQLite 설치
+
+1. [여기 들어가서 2개 설치!!](https://www.sqlite.org/download.html)
+
+![img](sql%20%EA%B8%B0%EC%B4%88.assets/https%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252F85d304cf-7928-492c-833d-f69be6a30f4f%252Fsqlite%EC%88%981%EC%99%84.png)
+
+2. `c드라이브` - sqlite 폴더 생성 후 모두 압축 풀어서 파일을 `sqlite` 폴더로 이동시키기
+
+![img](sql%20%EA%B8%B0%EC%B4%88.assets/https%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252F3dc21cca-b18c-489b-9497-235404f6ec71%252Fsqlite2.png)
+
+
+
+3. 환경변수 편집
+
+![img](sql%20%EA%B8%B0%EC%B4%88.assets/https%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252F4b36bdac-9c48-4fad-a94c-cea75980933e%252Fsqlite3.png)
+
+![img](sql%20%EA%B8%B0%EC%B4%88.assets/https%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252F23936382-94cc-4fb8-bc68-3c84ee843dae%252Fsqlite4.png)
+
+
+
+
+
+![img](sql%20%EA%B8%B0%EC%B4%88.assets/https%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252F401699a7-3ccc-4293-95bb-6c73f2bce699%252Fsqlite5.png)
+
+
+
+![img](sql%20%EA%B8%B0%EC%B4%88.assets/https%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252F5dc263e5-a221-4745-ac33-b0f3db3f94c7%252Fsqlite6.png)
+
+
+
+![img](sql%20%EA%B8%B0%EC%B4%88.assets/https%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252F0d83ba6d-cfa5-4b6f-b264-32c8dc390bb6%252Fsqlite%EC%88%982%EC%99%84.png)
+
+## alias 등록
+
+> `winpty sqlite3` 커맨드를 `sqlite3`로 변경하기
+
+![img](sql%20%EA%B8%B0%EC%B4%88.assets/https%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252Fbef45797-b786-42ee-a91c-5606bdc21e47%252F11.png)
+
+
+
+![img](sql%20%EA%B8%B0%EC%B4%88.assets/https%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252Fb028599c-0475-44d0-8213-72a3b8bf1ffa%252Falias2.png)
+
+![img](sql%20%EA%B8%B0%EC%B4%88.assets/https%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252F47efac86-2043-43c4-9649-3b724b51e18f%252F22.png)
+
+![img](sql%20%EA%B8%B0%EC%B4%88.assets/https%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252F7920d06b-7815-4203-a438-225bd71da5da%252Fsqlite%EC%88%983%EC%99%84.png)
+
+![img](sql%20%EA%B8%B0%EC%B4%88.assets/https%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252F508317b1-8bbd-4d2f-b721-24db948715a1%252Fsqlite%EC%88%984%EC%99%84.png)
+
 
 
 ## SQL

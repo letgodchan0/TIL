@@ -58,6 +58,15 @@
 - [django 04 - CRUD](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20CRUD.md)
 - [django 05 - 게시판 구현](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.md)
 
+
+
+## SQL
+
+- [sql 기초](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EA%B8%B0%EC%B4%88.md)
+
+- [sql 문법 - Insert, Select, Limit, Offset, Distinct, Update](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EB%AC%B8%EB%B2%95.md)
+- [sql - csv 파일 적용, Where, Aggregate, Like, Order By, Group By, ALTER](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EB%AC%B8%EB%B2%95%202.md)
+
 ## 자료구조 & 알고리즘
 
 - Array

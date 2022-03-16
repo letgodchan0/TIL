@@ -79,3 +79,5 @@
   - [스택, 계산기-후위표기법, 백트래킹, 부분집합, 순열, 분할정복,  퀵 정렬](https://github.com/letgodchan0/TIL/blob/main/aps/Stack%202.md)
 - Queue
     - [선형 큐, 원형 큐, BFS ](https://github.com/letgodchan0/TIL/blob/main/aps/Queue.md)
+- Tree
+    - [이진 트리, 순회, max heap, min heap](https://github.com/letgodchan0/TIL/blob/main/aps/Tree%201.md)

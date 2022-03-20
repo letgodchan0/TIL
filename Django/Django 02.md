@@ -143,9 +143,9 @@ def hello(request, name):
 
 ## App URL mapping
 
-> app의 view 함수가 많아지면서 사용하는 path() 또한 많아지고, 한 프로젝트는 여러 앱을 관리할 수 있기 때문에, app 또한 더 많이 작성되기 때문에 프로젝트의 `urls.py`에서 모두 관리하는 것은 프로젝트 유지 보수에 좋지 않다.
+> app의 view 함수가 많아지면서 사용하는 path() 또한 많아지고, 한 프로젝트는 여러 앱을 관리할 수 있기 때문에 app 또한 더 많이 작성된다. 따라서 프로젝트의 `urls.py`에서 모두 관리하는 것은 프로젝트 유지 보수에 좋지 않다.
 >
-> 따라서, 이제는 각 app에 `urls.py`를 생성하고 여기에 작성한다!
+> 그래서, 이제는 각 app에 `urls.py`를 생성하고 여기에 작성한다!
 
 ### 1. 각각의 app 하위에 `urls.py` 파일을 생성한다
 
@@ -265,9 +265,9 @@ urlpatterns = [
 
 - 장고는 기본적으로 templates를 찾을 때 각 app/template까지는 알아서 찾아준다. 하지만 서로 다른 app에 동일한 이름(index.html)의 템플릿 파일이 있다면, 제일 처음 찾은(settings에서 앱을 등록한 순서대로) index.html을 화면에 뿌려준다. 이는 장고가 기본적으로 모든 경로를 모아서 보기 때문이다.
 
-- 따라서 app/templates(여기까지는 장고가 기본으로 찯음) 뒤에 폴더를 하나 만들어야 한다. 
+- 따라서 app/templates(여기까지는 장고가 기본으로 찾음) 뒤에 폴더를 하나 만들어야 한다. 
   - <u>**app/templates/app/index.html 이런식으로 물리적으로 폴더를 끼워넣는 네임스페이스 방식을 활용 해야 한다.**</u>
-  - 그렇기 때문에 모든 경로도 빠짐없이 물리적으로 만들어준 폴더 이름을 붙여 주어야 하고, view 함수도 마찬가지로 리턴 값이 index.html로 되어 있던 것을 articles/index.html로 변경해주어야 한다!
+  - 그렇기 때문에 모든 경로에도 빠짐없이 물리적으로 만들어준 폴더 이름을 붙여 주어야 하고, view 함수도 마찬가지로 리턴 값이 index.html로 되어 있던 것을 articles/index.html로 변경해주어야 한다!
 
 ```python
 # articles/views.py
@@ -297,7 +297,7 @@ return render(request, 'pages/index.html')
 
 ## Static files 구성
 
-1. django.contrib.staticfiles 앱이 `INSTALLED_APPS`에 있는지 확인INSTALLED_APPS에 이미 있음
+1. django.contrib.staticfiles 앱이 `INSTALLED_APPS`에 있는지 확인 (INSTALLED_APPS에 이미 있음)
 2. setting.py에 `STATIC_URL` 정의
 3. 템플릿에서 static 템플릿 태그를 사용하여 static file이 있는 상대경로를 빌드
 4. 앱에 static file 저장하기 (`my_app/static/my_app/sample.jpg`)

@@ -174,7 +174,7 @@ Article.object.filter(title='찾아봐')[0].content
 
 ## CRUD - Delete
 
-- QuerySet의 모든 행에 대해 SQL 삭제 쿼리를 수행하고 삭체된 객체 수와 객체 유형당 삭제 수가 포함된 딕셔너리 반환
+- QuerySet의 모든 행에 대해 SQL 삭제 쿼리를 수행하고 삭제된 객체 수와 객체 유형당 삭제 수가 포함된 딕셔너리 반환
 
 ```bash
 # 삭제는 저장을 안해도 된다!!

@@ -81,7 +81,7 @@ class Article(models.Model):
    $ python manage.py migrate
    ```
 
-- 마이그레이션을 DB에 반영하기 위해사용
+- 마이그레이션을 DB에 반영하기 위해 사용
 - 설계도를 실제 DB에 반영하는 과정
 - 모델에서의 변경 사항들과 DB의 스키마가 동기화를 이룸
 - '0001_initial.py' 설계도를 실제 DB에 반영

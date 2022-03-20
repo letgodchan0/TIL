@@ -150,7 +150,10 @@ INSTALLED_APPS = [
 
 ### View
 
-> HTTP 요청을 수신하고 HTTP 응답을 반환하는 함수를 작성하는 곳으로 1) Model을 통해 요청에 맞는 필요 데이터에 접근하거나 2) Template에게 HTTP 응답 서식을 맡긴다. 
+> HTTP 요청을 수신하고 HTTP 응답을 반환하는 함수를 작성하는 곳으로, 
+>
+> 1) Model을 통해 요청에 맞는 필요 데이터에 접근하거나 
+> 2) Template에게 HTTP 응답 서식을 맡긴다. 
 
 `index`  주소 요청이 왔을 때 해당 view 함수를 실행할 꺼야!!
 

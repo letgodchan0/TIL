@@ -275,12 +275,12 @@ cnt => 349
 def f(i, n):
     if i == n:
         print(p)
-   	else:
+    else:
         for j in range(i, n):
             p[i], p[j] = p[j], p[i]  # 다른거 넣어봐
             f(i+1, n)
             p[i], p[j] = p[j], p[i]   # 원상 복귀
-	# 그냥 허전해 보여서 return 없어도 잘 돌아감
+    # 그냥 허전해 보여서 return 없어도 잘 돌아감
     return
 
 n = 3
@@ -373,5 +373,4 @@ answer = [0] * r
 A = [1, 2, 3, 4, 5]
 nCr(n, r, 0)
 ```
-
 

@@ -63,9 +63,9 @@
 ## SQL
 
 - [sql 기초](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EA%B8%B0%EC%B4%88.md)
-
 - [sql 문법 - Insert, Select, Limit, Offset, Distinct, Update](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EB%AC%B8%EB%B2%95.md)
 - [sql 문법 - csv 파일 적용, Where, Aggregate, Like, Order By, Group By, ALTER](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EB%AC%B8%EB%B2%95%202.md)
+- []
 
 ## 자료구조 & 알고리즘
 
@@ -75,9 +75,12 @@
 - String
   - [패턴매칭, KMP 알고리즘, 보이어-무어 알고리즘](https://github.com/letgodchan0/TIL/blob/main/aps/String%201.md)
 - Stack
-  - [스택, 재귀호출, Memoization & DP, DFS](https://github.com/letgodchan0/TIL/blob/main/aps/Stack%201.md)
-  - [스택, 계산기-후위표기법, 백트래킹, 부분집합, 순열, 분할정복,  퀵 정렬](https://github.com/letgodchan0/TIL/blob/main/aps/Stack%202.md)
+  - [스택, 재귀호출, Memoization & DP, DFS, 계산기 - 후위표기법](https://github.com/letgodchan0/TIL/blob/main/aps/Stack%201.md)
 - Queue
     - [선형 큐, 원형 큐, BFS ](https://github.com/letgodchan0/TIL/blob/main/aps/Queue.md)
+- Backtracking
+    - [[부분집합, 순열, 조합](https://github.com/letgodchan0/TIL/blob/main/aps/Stack%202.md)]
+- Divide and Conquer
+    - [병합정렬, 퀵정렬](https://github.com/letgodchan0/TIL/blob/main/aps/merge%26quick.md)
 - Tree
     - [이진 트리, 순회, max heap, min heap](https://github.com/letgodchan0/TIL/blob/main/aps/Tree%201.md)

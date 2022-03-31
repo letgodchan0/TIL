@@ -1,4 +1,39 @@
-# 🌱 병합 정렬 & 퀵 정렬
+# 🌱 분할 정복
+
+- 분할 : 해결할 문제를 여러 개의 작은 부분으로 나눈다.
+- 정복 : 나눈 작은 문제를 각각 해결한다.
+- 통합 : (필요하다면) 해결된 해답을 모은다.
+
+## 거듭 제곱
+
+**Cn = C X C X C ... X C**
+
+```python
+def power(base, exponent):
+    if base == 0:
+        return 1
+    result = 1
+    for i in range(exponent):
+        result *= base
+    return result
+```
+
+![image-20220227183926841](merge&quick.assets/image-20220227183926841.png)
+
+```python
+def power(base, exponent):
+    if exponent == 0 or base == 0:
+        return 1
+    
+    if exponent % 2 == 0:
+        newbase = power(base, exponent/2)
+        return newbase * newbase
+    else:
+        newbase = power(base, (exponent-1)/2)
+        return (newbase * newbase) * base
+```
+
+
 
 ## 병합 정렬(Merge Sort)
 

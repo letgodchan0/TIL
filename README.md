@@ -79,7 +79,7 @@
 - Queue
     - [선형 큐, 원형 큐, BFS ](https://github.com/letgodchan0/TIL/blob/main/aps/Queue.md)
 - Backtracking
-    - [[부분집합, 순열, 조합](https://github.com/letgodchan0/TIL/blob/main/aps/Stack%202.md)]
+    - [부분집합, 순열, 조합](https://github.com/letgodchan0/TIL/blob/main/aps/Stack%202.md)
 - Divide and Conquer
     - [병합정렬, 퀵정렬](https://github.com/letgodchan0/TIL/blob/main/aps/merge%26quick.md)
 - Tree

@@ -314,3 +314,92 @@ dfs(adjList, 1, visited)
 1 2 4 6 5 7 3
 ```
 
+## 계산기
+
+**문자열로 된 계산식이 주어질 때 스택을 이용하여 이 계산식의 값을 계산할 수 있다.**
+
+<u>step 1. 중위 표기법의 수식을 후위 표기법으로 변경한다 (스택 이용)</u>
+
+	- 수식의 각 연산자에 대해서 우선 순위에 따라 괄호를 사용하여 다시 표현한다.
+	- 각 연산자를 그에 대응하는 오른쪽 괄호의 뒤로 이동시킨다.
+	- 괄호를 제거한다.
+	
+	ex) A*B-C/D - > AB*CD/-
+
+> 중위 표기법에서 후위 표기법으로의 변환 알고리즘 (스택 이용)
+
+```python
+string = '(6+5*(2-8)/2)'
+N = len(string)
+isp = {'+': 1, '-' : 1, '*': 2, '/': 2, '(' : 0} # 스택 push 전 우선순위
+icp = {'+': 1, '-' : 1, '*': 2, '/': 2, '(' : 3} # 스택 내부 우선순위
+stack = [0] * N # 연산자를 담는 곳
+top = -1
+postfix = '' # 최종 후위표기식
+for i in range(N):
+    if '0' <= string[i] <= '9': # 피연산자면 postfix에 붙여주기
+        postfix += string[i]
+    # 연산자라면, 스택 내부
+    elif string[i] == '+' or string[i] == '*' or string[i] == '-' or string[i] =='/':
+        # 토큰이 스택의 top 우선순위보다 높을 때까지 스택에서 pop해서 postfix에 붙여준다. 
+        while top > -1 and icp[string[i]] <= isp[stack[top]]:
+            postfix += stack[top]
+            stack[top] = 0
+            top -= 1
+        # 스택이 비어 있거나 토큰이 스택의 top보다 우선순위가 높다면 그대로 스택에 push
+        top += 1
+        stack[top] = string[i]
+    elif string[i] == '(':
+        top += 1
+        stack[top] = string[i]
+    else:
+        # 왼쪽 괄호 나올 때까지 stack을 pop해서 postfix에 푸쉬하기
+        while stack[top] != '(':
+            postfix += stack[top]
+            stack[top] = 0
+            top -= 1
+        # 왼쪽 괄호 만나면 pop 하기
+        if stack[top] == '(':
+            stack[top] = 0
+            top -= 1
+# 스택에 남아있는 연산자 모두 pop하여 postfix에 푸쉬하기
+while top > -1:
+    postfix += stack[top]
+    top -= 1
+    
+postfix => '6528-*2/+'
+```
+
+1. 입력 받은 중위 표기식에서 토큰을 읽는다. *토큰: 문자열에서 최소 단위
+2. 토큰이 피연산자이면 `postfix (최종으로 후위표기된 식)`에 붙여준다. 
+3. 토큰이 연산자일 때 이 토큰이 스택의 top에 저장되어 있는 연산자보다 우선순위가 높으면 스택에 push하고 그렇지 않다면 top의 연산자 우선순위가 토큰의 우선순위보다 작을 때 까지 스택에서 pop한 후 토큰의 연산자를 push 한다. 만약 top에 연산자가 없으면 push 한다.
+
+4. 토큰이 오른쪽 괄호 ')' 이면 스택 top에 왼쪽 괄호 '(' 가 올 때까지 스택에 pop 연산을 수행하고 pop한 연산자를 출력한다.  왼쪽 괄호를 만나면 pop만 하고 출력하지는 않는다.
+5. 중위 표기식에 더 읽을 것이 없다면 중지하고, 더 읽을 것이 있다면 1부터 다시 반복한다.
+6. 스택에 남아 있는 연산자를 모두 pop하여 출력한다.
+
+
+
+<u>step 2. 후위 표기법의 수식을 스택을 이용하여 계산한다.</u>
+
+```python
+numbers = []
+for x in range(len(postfix)):
+    if postfix[x].isdigit():
+        numbers.append(postfix[x])
+    elif postfix[x] == '*':
+        numbers.append(int(numbers.pop() * int(numbers.pop())))
+    elif postfix[x] == '+':
+        numbers.append(int(numbers.pop() + int(numbers.pop())))
+    elif postfix[x] == '-':
+        second = int(numbers.pop())
+        first = int(numbers.pop())
+        numbers.append(first - second)
+    elif postfix[x] == '/':
+        second = int(numbers.pop())
+        first = int(numbers.pop())
+        numbers.append(first / second)
+
+numbers[0] => -9 # 최종 결과
+```
+

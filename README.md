@@ -84,3 +84,7 @@
     - [병합정렬, 퀵정렬](https://github.com/letgodchan0/TIL/blob/main/aps/merge%26quick.md)
 - Tree
     - [이진 트리, 순회, max heap, min heap](https://github.com/letgodchan0/TIL/blob/main/aps/Tree%201.md)
+- Graph
+    - [그래프 탐색 - BFS & DFS](https://github.com/letgodchan0/TIL/blob/main/aps/BFS%20%26%20DFS.md)
+    - [그래프 최소 비용 - MST](https://github.com/letgodchan0/TIL/blob/main/aps/MST.md)
+    - [그래프 최단 경로 - 다익스트라](https://github.com/letgodchan0/TIL/blob/main/aps/dijkstra.md)

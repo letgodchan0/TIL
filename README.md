@@ -52,13 +52,14 @@
 
 ## Django
 
-- [django 01 - 설치 및 프로젝트&앱 생성, 요청과 응답, Template](https://github.com/letgodchan0/TIL/blob/main/Django/Django%2001.md)
-- [django 02 - HTML_form, Variable Routing, Namespace, Static](https://github.com/letgodchan0/TIL/blob/main/Django/Django%2002.md)
-- [django 03 - Model](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Model.md)
-- [django 04 - CRUD](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20CRUD.md)
-- [django 05 - 게시판 구현](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.md)
+- [django - 설치 및 프로젝트&앱 생성, 요청과 응답, Template](https://github.com/letgodchan0/TIL/blob/main/Django/Django%2001.md)
+- [django - HTML_form, Variable Routing, Namespace, Static](https://github.com/letgodchan0/TIL/blob/main/Django/Django%2002.md)
+- [django - Model](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Model.md)
+- [django - CRUD](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20CRUD.md)
+- [django - 게시판 구현](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.md)
 
-
+- [django - Form](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Form.md)
+- [django - ModelForm](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20ModelForm.md)
 
 ## SQL
 

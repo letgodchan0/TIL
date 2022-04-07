@@ -162,6 +162,18 @@ def update(request, pk):
     return render(request, 'articles/update.html', context)
 ```
 
+##### + 참고 get_object_or_404
+
+```python
+from django.shortcuts import render, redirect, get_object_or_404
+
+def update(request, pk):
+    # 데이터가 없거나 많이 있으면 파이썬 에러(서버에 500의 상태코드 메세지가 나감)
+    article = Article.objects.get(pk=pk)
+    # 실제로는 게시글이 없는데 사용자가 요청을 한거기 때문에 object가 없으면 404 에러메세지 보여주도록
+    article = get_object_or_404(Article, pk = pk)
+```
+
 ```html
 <!-- edit.html(기존의 edit.html 이름 변경 모든 edit(url등등)을 update로 변경) -->
 {% extends 'base.html' %}

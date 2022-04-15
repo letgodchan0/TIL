@@ -70,6 +70,10 @@
 
 - [django - Media files (이미지 업로드)](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Media%20files.md)
 
+- [django - Authentication, 쿠키/세션](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Authentication%20System.md)
+
+- [django - 1:N, Custon User 반영](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Model%20Relationship.md)
+
   
 
 ## SQL

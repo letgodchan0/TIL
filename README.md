@@ -76,6 +76,8 @@
 
 - [django - M:N, ManyToManyField](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Model%20Relationship2.md)
 
+- [django - 좋아요, 팔로우 기능 구현](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20%EC%A2%8B%EC%95%84%EC%9A%94%2C%20%ED%8C%94%EB%A1%9C%EC%9A%B0%20%EA%B8%B0%EB%8A%A5%20%EA%B0%9C%EB%B0%9C.md)
+
   
 
 ## SQL

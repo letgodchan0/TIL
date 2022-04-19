@@ -16,6 +16,9 @@
 - [Git Init 부터 Git Hub push까지](https://github.com/letgodchan0/TIL/blob/main/git/git_%EA%B8%B0%EC%B4%88.md)
 - [Git branch, switch](https://github.com/letgodchan0/TIL/blob/main/git/01_branch.md)
 - [Git Branch Merge, merge 3종류](https://github.com/letgodchan0/TIL/blob/main/git/02_branch_merging.md)
+- [Git Undoing Things](https://github.com/letgodchan0/TIL/blob/main/git/03_undoing.md)
+- [Git Reset & Revert](https://github.com/letgodchan0/TIL/blob/main/git/04_reset_revert.md)
+- [Git으로 협업하기](https://github.com/letgodchan0/TIL/blob/main/git/git%EC%9C%BC%EB%A1%9C%20%ED%98%91%EC%97%85%ED%95%98%EA%B8%B0.md)
 
 ## Markdown
 

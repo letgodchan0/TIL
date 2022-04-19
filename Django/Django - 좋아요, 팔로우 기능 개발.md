@@ -254,7 +254,7 @@ def follow(request, user_pk):
     return redirect('accounts:login')
 ```
 
-1. `you = get_object_or_404(get_user_model(), pk=user_pk)` : 현재 요청한 유저의 pk에 해당하는 데이터를 `you` 객체에 담음
+1. `you = get_object_or_404(get_user_model(), pk=user_pk)` : 현재 팔로우 클릭을 당한(?) 팔로우의 주인(?) 유저에 대한 데이터가 `you` 객체에 담김
 2. `me = request.user` : 팔로우 요청을 시도한 유저의 데이터를 담음
 3. `if me != you:` : 팔로우 요청을 시도한 유저(me) 가 팔로우의 주인(?) 유저 (you)와 다른지 확인, 자기자신을 팔로우 하지 못하게 하기 위해서
 

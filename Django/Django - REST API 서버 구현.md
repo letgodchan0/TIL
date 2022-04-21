@@ -547,9 +547,12 @@ class CommentSerializer(serializers.ModelSerializer):
 
 ### 🔗 GET - api/v1/articles/article_pk/ (특정 게시글에 작성된 댓글 목록 출력)
 
-- `Serializer`는 기존 필드를 override 하거나 추가 필드를 구성할 수 있음
-  1. PrimaryKeyField
-  2. Nested relationships
+>특정 게시글의 모든 필드와 댓글 목록을 JSON 타입으로 응답
+>
+>`Serializer`는 기존 필드를 override 하거나 추가 필드를 구성할 수 있음
+>
+>1. PrimaryKeyField
+>2. Nested relationships
 
 ### case1) PrimaryKeyRelatedField
 
@@ -594,6 +597,8 @@ class ArticleSerializer(serializers.ModelSerializer):
 - 두 클래스의 상하 위치 변경!!!
 
 ### 🔗 GET - api/v1/articles/article_pk/ (특정 게시글에 작성된 댓글의 개수 구하기)
+
+> 특정 게시글의 모든 필드와 댓글, 댓글 개수 데이터를 JSON 타입으로 응답
 
 ```python
 # articles/serializers.py

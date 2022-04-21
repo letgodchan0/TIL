@@ -1,14 +1,10 @@
-# 🌱 REST API
+# 📩 REST API
 
 ### DRF를 활용하여 게시글 관련 REST API 서버 구축하기
 
-</div>
-
-프로젝트는 `my_api` , 앱은 `articles`인 REST API 서버를 통해 게시판과 댓글 관련 데이터를 넘겨주는 방법을 다루었습니다.
 
 
-
-## REST API 서버 구축을 위한 기본세팅
+## 📋 REST API 서버 구축을 위한 기본세팅
 
 ### 1. 가상환경 설정 및 패키지 설치
 
@@ -61,7 +57,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-### 4.  `models.py` 생성
+### 4. `models.py` 생성
 
 ```python
 # articles/models.py
@@ -151,7 +147,15 @@ $ python manage.py seed articles --number=20
 
 
 
-## 🔗 GET - api/v1/articles/
+# 🌈 게시글 관련
+
+<br>
+
+<hr>
+
+
+
+## 🔗 GET - api/v1/articles/ (모든 게시글 조회)
 
 > 모든 게시글의 id와 title 컬럼을 JSON 데이터 타입으로 응답하기
 
@@ -211,7 +215,7 @@ def article_list(request):
   - View 함수가 응답해야 하는 HTTP 메서드의 목록을 리스트의 인자로 받음
   - DRF에서는 선택이 아닌 필수적으로 작성해야 해당 view 함수가 정상적으로 동작함
 
-## 🔗 POST- api/v1/articles/
+## 🔗 POST- api/v1/articles/ (게시글 생성)
 
 > - 검증에 성공하는 경우 새로운 게시글의 정보를 DB에 저장하고, 저장된 게시글의 정보를 응답한다.
 >
@@ -250,7 +254,7 @@ def article_list(request):
 
 
 
-## 🔗 GET - api/v1/articles/article_pk/
+## 🔗 GET - api/v1/articles/article_pk/ (특정 게시글 조회)
 
 > 특정 게시글의 모든 컬럼을 JSON 데이터 타입으로 응답한다.
 
@@ -293,7 +297,7 @@ def article_detail(request, article_pk):
 
 
 
-## 🔗 DELETE - api/v1/articles/article_pk/
+## 🔗 DELETE - api/v1/articles/article_pk/ (특정 게시글 삭제)
 
 > - DELETE 요청인 경우 특정 게시글을 삭제하고 삭제가 완료되면, 삭제한 게시글의 id를 응답한다. 
 >
@@ -322,7 +326,7 @@ def article_detail(request, article_pk):
 
 
 
-## 🔗 PUT - api/v1/articles/article_pk/
+## 🔗 PUT - api/v1/articles/article_pk/ (특정 게시글 수정)
 
 > - PUT 요청인 경우 특정 게시글의 정보를 수정한다.
 >   - 검증에 성공하는 경우 수정된 게시글의 정보를 DB에 저장한다.
@@ -355,7 +359,9 @@ def article_detail(request, article_pk):
 
 
 
-## 🔗 GET - api/v1/comments/
+# 🌈 댓글 관련
+
+## 🔗 GET - api/v1/comments/ (모든 댓글 조회)
 
 > 모든 댓글의 필드를 JSON 데이터 타입으로 응답하기
 
@@ -400,7 +406,7 @@ def comment_list(request):
 
 
 
-## 🔗 GET - api/v1/comments/comment_pk/
+## 🔗 GET - api/v1/comments/comment_pk/ (특정 댓글 조회)
 
 > GET 요청인 경우 특정 댓글의 모든 컬럼을 JSON으로 응답
 
@@ -427,7 +433,7 @@ def comment_detail(request, comment_pk):
     return Response(serializer.data)
 ```
 
-## 🔗 DELETE & PUT- api/v1/comments/comment_pk/
+## 🔗 DELETE & PUT- api/v1/comments/comment_pk/ (특정 댓글 삭제 & 수정)
 
 > DELETE 요청인 경우 특정 댓글의 정보를 삭제한다.
 >
@@ -471,9 +477,9 @@ def comment_detail(request, comment_pk):
 
 
 
+## 🔗 POST - api/v1/articles/article_pk/comments/ (댓글 생성)
 
-
-## 🔗 POST - api/v1/articles/article_pk/comments/
+> 특정 게시글의 댓글 생성
 
 ### 1. url 작성
 
@@ -527,9 +533,9 @@ class CommentSerializer(serializers.ModelSerializer):
 
 
 
-## 🌈 1:N Serializer
+## 🌈1:N Serializer
 
-### 특정 게시글에 작성된 댓글 목록 출력하기
+### 🔗 GET - api/v1/articles/article_pk/ (특정 게시글에 작성된 댓글 목록 출력)
 
 - `Serializer`는 기존 필드를 override 하거나 추가 필드를 구성할 수 있음
   1. PrimaryKeyField
@@ -577,13 +583,7 @@ class ArticleSerializer(serializers.ModelSerializer):
 - 이러한 중첩된 관계를 `serializers`를 필드로 사용하여 표현할 수 있음
 - 두 클래스의 상하 위치 변경!!!
 
-`api/v1/articles/1/`로 GET 요청 후 응답 확인
-
-
-
-
-
-## 특정 게시글에 작성된 댓글의 개수 구하기
+### 🔗 GET - api/v1/articles/article_pk/ (특정 게시글에 작성된 댓글의 개수 구하기)
 
 ```python
 # articles/serializers.py
@@ -611,6 +611,6 @@ class ArticleSerializer(serializers.ModelSerializer):
 
   - 특정 필드를 override 혹은 추가한 경우 `read_only_fields`를 사용할 수 없음
 
-  ![image-20220422014152785](Django%20-%20REST%20API%20%EC%84%9C%EB%B2%84%20%EA%B5%AC%ED%98%84.assets/image-20220422014152785.png)
+  ![image-20220422014549008](Django%20-%20REST%20API%20%EC%84%9C%EB%B2%84%20%EA%B5%AC%ED%98%84.assets/image-20220422014549008.png)
 
   

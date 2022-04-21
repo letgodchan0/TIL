@@ -2,7 +2,9 @@
 
 ### DRF를 활용하여 게시글 관련 REST API 서버 구축하기
 
+<hr>
 
+<br>
 
 ## 📋 REST API 서버 구축을 위한 기본세팅
 
@@ -145,11 +147,11 @@ urlpatterns = [
 $ python manage.py seed articles --number=20
 ```
 
+<br>
+
 
 
 # 🌈 게시글 관련
-
-<br>
 
 <hr>
 
@@ -357,9 +359,15 @@ def article_detail(request, article_pk):
             return Response(serializer.data)
 ```
 
+<br>
+
 
 
 # 🌈 댓글 관련
+
+<hr>
+
+
 
 ## 🔗 GET - api/v1/comments/ (모든 댓글 조회)
 
@@ -531,9 +539,11 @@ class CommentSerializer(serializers.ModelSerializer):
     - CommentSerializer에서 article 필드에 해당하는 데이터 또한 요청으로부터 받아서 `serializer`나는 것으로 설정되어 있기 때문!
   - 이때는 읽기 전용 필드(read_only_fields) 설정을 통해 `serializer`하지 않고 반환 값에만 해당 필드가 포함되도록 설정할 수 있음 
 
+<br>
 
+# 🌈1:N Serializer
 
-## 🌈1:N Serializer
+<hr>
 
 ### 🔗 GET - api/v1/articles/article_pk/ (특정 게시글에 작성된 댓글 목록 출력)
 

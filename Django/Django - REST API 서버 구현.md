@@ -12,7 +12,7 @@
 
 ```bash
 $ python -m venv venv
-$ python -m venv/Scripts/activate
+$ source venv/Scripts/activate
 ```
 
 ```bash
@@ -628,4 +628,158 @@ class ArticleSerializer(serializers.ModelSerializer):
 
   ![image-20220422014549008](Django%20-%20REST%20API%20%EC%84%9C%EB%B2%84%20%EA%B5%AC%ED%98%84.assets/image-20220422014549008.png)
 
-  
+<br>
+
+## 🌈M:N Serializer
+
+<hr>
+
+> Card라는 새로운 모델 클래스 정의, 이 클래스는 Article와 M:N의 관계를 가진다.
+
+### 1. Model 수정 및 마이그레이션
+
+```python
+# articles/models.py
+	...,
+    
+    class Card(models.Model):
+        articles = models.ManyToManyField(Article, related_name='cards')
+        name = models.CharField(max_length=100)
+```
+
+```bash
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
+
+## 2. Serializer 생성
+
+```python
+# articles/serializers.py
+from .models import Card
+
+class CardSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Card
+        fields = '__all__'
+        
+class ArticleSerializer(serializers.ModelSerializer):
+    comment_set = CommentSerializer(many=True, read_only=True)
+    comment_count = serializers.IntegerField(source='comment_set.count', read_only=True)
+    cards = CardSerializer(many=True, read_only=True)  # 새로추가
+
+    class Meta:
+        model = Article
+        fields = '__all__'
+```
+
+- `CardSerializer` 클래스 생성
+- `ArticleSrializer` 클래스에서 `cards` 필드 생성
+
+
+
+## 🔗GET - api/v1/cards/ (모든 카드에 작성된 데이터 조회)
+
+### 1. url 작성
+
+```python
+# articles/urls.py
+
+urlpatterns = [
+    ...,
+    path('cards/', views.card_list),
+]
+```
+
+### 2. view 작성
+
+```python
+# articles/views.py
+from .serializers import CardSerializer
+
+@api_view(['GET'])
+def card_list(request):
+    cards = get_list_or_404(Card)
+    serializer = CardSerializer(cards, many=True)
+    return Response(serializer.data)
+```
+
+
+
+
+
+## 🔗GET - api/v1/cards/card_pk/ (특정 카드에 작성된 데이터 조회, 수정, 삭제)
+
+### 1. url 작성
+
+```python
+# articles/urls.py
+
+urlpatterns = [
+    ...,
+    path('cards/<int:card_pk>/', views.card_detail),
+]
+```
+
+### 2. view 작성
+
+```python
+# articles/views.py
+
+@api_view(['GET', 'PUT', 'DELETE'])
+def card_detail(request, card_pk):
+    card = get_object_or_404(Card)
+    # 조회
+    if request.method == 'GET':
+        serializer = CardSerializer(card)
+        return Response(serializer.data)
+    
+    elif request.method == 'PUT':
+        serializer = CardSerializer(card, data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serailizer.save()
+            return Response(serailizer.data)
+        
+    elif request.method == 'DELETE':
+        card.delete()
+        data = {
+            'delete': f'데이터 {card_pk}번이 삭제되었습니다.',
+        }
+        return Response(data, status=status.HTTP_204_NO_CONTENT)
+```
+
+
+
+## 🔗GET - api/v1/cards/card_pk/ (카드 생성)
+
+### 1. url 작성
+
+```PYTHON
+# articles/urls.py
+
+urlpatterns = [
+    ...,
+    path('cards/<int:card_pk>/<int:article_pk>/', views.card_register),
+]
+```
+
+### 2. view 작성
+
+```python
+# articles/views.py
+
+@api_view(['POST'])
+def card_register(request, card_pk, article_pk):
+    card = get_object_or_404(Card)
+    article = get_object_or_404(Article)
+    # 해당 게시글의 카드가 이미 존재하면 제거
+    if card.articles.filter(pk=article_pk).exists():
+        card.articles.remove(article)
+    # 존재하지 않으면 생성
+    else:
+        card.articles.add(article)
+    serializer = CardSerializer(card)
+    return Response(serializer.data)
+```
+

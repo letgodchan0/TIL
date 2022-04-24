@@ -246,13 +246,27 @@ def article_list(request):
 ```
 
 - `status=status.HTTP_201_CREATED` 
+
   - 201 Created 상태 코드 및 메시지 응답
   - DRF에는 status code를 보다 명확하고 읽기 쉽게 만드는데 사용할 수 있는 정의된 상수 집합을 제공
   - `status` 모듈에 HTTP status code 집합이 모두 포함되어 있음
+
 - `raise_exception` 
+
   - ''Raising an exception on invalid data"
   - `is_valid()`는 유효성 검사 오류가 있는 경우 `serializers.ValidationError` 예외를 발생시키는 선택적 `raise_exception` 인자를 사용할 수 있음
   - DRF에서 제공하는 기본 예외 처리기에 의해 자동으로 처리되며, 기본적으로 HTTP status code 400을 응답으로 반환함
+
+- `serializer = ArticleSerializer(data=request.data)` 
+
+  - `ArticleListSerializer`은 기본적으로 `ModelSerializer`을 상속받고 있고 얘는 다시 `Serializer`을 상속받고 있다. DB 인스턴스를 생성하고자 할 때 사용하는 메서드가  `Serializer`의  `create` 메서드이이고, 다음과 같이 인자에 들어가는게 `request.data` 하나뿐이다!
+
+    ```python
+    def create(self, validated_data):
+        ...
+    ```
+
+    
 
 
 
@@ -358,6 +372,19 @@ def article_detail(request, article_pk):
             serializer.save()
             return Response(serializer.data)
 ```
+
+- `serializer = ArticleSerializer(article, data=request.data)`
+
+  - `ArticleListSerializer`은 기본적으로 `ModelSerializer`을 상속받고 있고 얘는 다시 `Serializer`을 상속받고 있다. DB 인스턴스를 수정하고자 할 때 사용하는 메서드가  `Serializer`의  `update` 메서드이고, 다음과 같이 인자에 들어가는게 인스턴스인  `article`과 사용자가 작성한  `request.data` 2개이기 때문에 2개를 인자에 2개가 들어간다.
+
+    ```python
+    def update(self, instance, validated_data):
+        ...
+    ```
+
+    
+
+
 
 <br>
 

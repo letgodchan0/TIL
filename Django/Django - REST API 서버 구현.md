@@ -375,7 +375,7 @@ def article_detail(request, article_pk):
 
 - `serializer = ArticleSerializer(article, data=request.data)`
 
-  - `ArticleListSerializer`은 기본적으로 `ModelSerializer`을 상속받고 있고 얘는 다시 `Serializer`을 상속받고 있다. DB 인스턴스를 수정하고자 할 때 사용하는 메서드가  `Serializer`의  `update` 메서드이고, 다음과 같이 인자에 들어가는게 인스턴스인  `article`과 사용자가 작성한  `request.data` 2개이기 때문에 2개를 인자에 2개가 들어간다.
+  - `ArticleListSerializer`은 기본적으로 `ModelSerializer`을 상속받고 있고 얘는 다시 `Serializer`을 상속받고 있다. DB 인스턴스를 수정하고자 할 때 사용하는 메서드가  `Serializer`의  `update` 메서드이고, 다음과 같이 인자에 들어가는게 인스턴스인  `article`과 사용자가 작성한  `request.data` 2개이기 때문에 인자에 2개가 들어간다.
 
     ```python
     def update(self, instance, validated_data):
@@ -563,7 +563,7 @@ class CommentSerializer(serializers.ModelSerializer):
 
 - `Read Only Field`
   - 어떤 게시글에 작성하는 댓글인지에 대한 정보를 form-data로 넘겨주지 않았기 때문에 `serializer` 하는 과정에서 `article` 필드가 유효성 검사를 통과하지 못함
-    - CommentSerializer에서 article 필드에 해당하는 데이터 또한 요청으로부터 받아서 `serializer`나는 것으로 설정되어 있기 때문!
+    - CommentSerializer에서 article 필드에 해당하는 데이터 또한 요청으로부터 받아서 `serializer`하는 것으로 설정되어 있기 때문!
   - 이때는 읽기 전용 필드(read_only_fields) 설정을 통해 `serializer`하지 않고 반환 값에만 해당 필드가 포함되도록 설정할 수 있음 
 
 <br>

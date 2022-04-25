@@ -1,14 +1,12 @@
 # 📒 JavaScript Intro
 
-<br>
+
 
 ## 브라우저
 
 - URL로 웹을 탐색하며 서버와 통신하고, HTML 문서나 파일을 출력하는 GUI 기반의 소프트 웨어
 - 인터넷의 컨텐츠를 검색 및 열람하도록 하고 ''웹 브라우저'' 라고도 함.
 - Chrome, Friefox, Edge, Safari 등등
-
-
 
 ## 브라우저에서 할 수 있는 일
 
@@ -18,8 +16,6 @@
   - navigator, screen location
 - JavaScript Core (ECMAScript)
   - Data Structure, Conditional Expression, Iteration
-
-
 
 ## DOM
 
@@ -34,16 +30,14 @@
 - 주요 객체
 
   - window : DOM을 표현하는 창(브라우저 탭), 최상위 객체
-  - document : 페이지 컨텐츠의 Entry Point 역할을 하며, <head>, <body> 등과 같은 수많은 다른 요소를 포함
+  - document : 페이지 컨텐츠의 Entry Point 역할을 하며, , 등과 같은 수많은 다른 요소를 포함
 
 - 파싱 (Parsing)
 
   - 구문 분석, 해석
   - 브라우저가 문자열을 해석하여 DOM Tree로 만드는 과정
 
-  ![image-20220425193625965](JavaScript%20%EA%B8%B0%EC%B4%88.assets/image-20220425193625965.png)
-
-
+  [![image-20220425193625965](JavaScript%20%EA%B8%B0%EC%B4%88.assets/image-20220425193625965-16508832598431.png)](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript 기초.assets/image-20220425193625965.png)
 
 ## BOM
 
@@ -59,6 +53,7 @@
 
 - BOM - 조작
 
-  ![image-20220425193807478](JavaScript%20%EA%B8%B0%EC%B4%88.assets/image-20220425193807478.png)
+  [![image-20220425193807478](JavaScript%20%EA%B8%B0%EC%B4%88.assets/image-20220425193807478-16508832598433.png)](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript 기초.assets/image-20220425193807478.png)
 
-  
+<details class="details-reset details-overlay details-overlay-dark" id="jumpto-line-details-dialog" style="box-sizing: border-box; display: block;"><summary data-hotkey="l" aria-label="Jump to line" role="button" style="box-sizing: border-box; display: list-item; cursor: pointer; list-style: none; transition: color 80ms cubic-bezier(0.33, 1, 0.68, 1) 0s, background-color, box-shadow, border-color;"></summary></details>
+

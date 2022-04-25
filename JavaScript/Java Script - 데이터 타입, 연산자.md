@@ -45,7 +45,8 @@ console.log(greeting)      	  // 5. ['Hello, world'] 출력
 
 ## 원시 타입 (Primitive type)
 
-<hr>
+<br>
+
 ### 💡숫자 (Number) 타입
 
 ```javascript

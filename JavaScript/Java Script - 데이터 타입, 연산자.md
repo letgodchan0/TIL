@@ -46,7 +46,7 @@ console.log(greeting)      	  // 5. ['Hello, world'] 출력
 ## 원시 타입 (Primitive type)
 
 <hr>
-### 💡 숫자 (Number) 타입
+### 💡숫자 (Number) 타입
 
 ```javascript
 const a = 13			// 양의 정수
@@ -117,7 +117,7 @@ typeof null	// object
 
 <br>
 
-### 💡 Boolean 타입
+### 💡Boolean 타입
 
 - 논리적 참 또는 거짓을 나타내는 타입
 - `true` 또는 `false` 로 표현

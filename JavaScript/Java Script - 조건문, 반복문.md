@@ -15,7 +15,7 @@
 
 <br>
 
-#### 💡 if statement
+### 💡 if statement
 
 ```javascript
 const nation = 'Korea'
@@ -35,7 +35,7 @@ if (nation == 'Korea') {
 
 <br>
 
-#### 💡 switch statement
+### 💡 switch statement
 
 ```javascript
 const nation = 'Korea'
@@ -79,7 +79,7 @@ switch(nation) {
 
 <br>
 
-#### 🌻 while
+### 🌻 while
 
 ```javascript
 let i = 0
@@ -98,9 +98,7 @@ while (i < 6) {
 
 <br>
 
-
-
-#### 🌻 for
+### 🌻 for
 
 ```javascript
 for (initialization; condition; expression) {
@@ -120,9 +118,7 @@ for (let i = 0; i < 6; i++){
 
 <br>
 
-
-
-#### 🌻 for...in (객체 순회 적합)
+### 🌻 for...in (객체 순회 적합)
 
 ```javascript
 // object(객체) => key-value로 이루어진 자료구조
@@ -144,7 +140,7 @@ for (let capital in capitals) {
 
 <br>
 
-#### 🌻 for...of (배열 순회 적합)
+### 🌻 for...of (배열 순회 적합)
 
 ```javascript
 const fruits = ['딸기', '바나나', '메론']

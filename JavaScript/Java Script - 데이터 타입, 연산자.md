@@ -41,6 +41,8 @@ message[0] = 'Hello, world'   // 4. message 재할당
 console.log(greeting)      	  // 5. ['Hello, world'] 출력
 ```
 
+<br>
+
 
 
 ## 원시 타입 (Primitive type)
@@ -135,13 +137,16 @@ typeof null	// object
 |   String    | 빈 문자열  | 나머지 모든 경우 |
 |   Object    |     X      |     항상 참      |
 
-
+<br>
 
 
 
 ## 연산자
 
 <hr>
+
+
+
 ### 🔔 할당 연산자
 
 ```javascript
@@ -282,6 +287,8 @@ console.log(result)	// No
 - 가장 왼쪽의 조건식이 참이면 콜론(:) 앞의 값을 사용하고 그렇지 않으면 콜론(:) 뒤의 값을 사용
 - 삼항 연산자의 결과 값이기 때문에 변수에 할당 가능
 - [참고] 한 줄에 표기하는 것을 권장
+
+<br>
 
 
 

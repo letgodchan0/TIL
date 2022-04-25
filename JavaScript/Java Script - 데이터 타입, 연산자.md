@@ -46,8 +46,7 @@ console.log(greeting)      	  // 5. ['Hello, world'] 출력
 ## 원시 타입 (Primitive type)
 
 <hr>
-
-#### 💡 숫자 (Number) 타입
+### 💡 숫자 (Number) 타입
 
 ```javascript
 const a = 13			// 양의 정수
@@ -67,7 +66,7 @@ const g = NaN			// 산술 연산 불가
 
 <br>
 
-#### 💡문자열 (String) 타입
+### 💡문자열 (String) 타입
 
 ```javascript
 const firstName = 'Brandan'
@@ -85,7 +84,7 @@ const fullName = `${firstName} ${lastName}`
 
 <br>
 
-#### 💡undefined
+### 💡undefined
 
 ```javascript
 let firstName
@@ -97,7 +96,7 @@ console.log(firstName)	// undefined
 
 <br>
 
-#### 💡null
+### 💡null
 
 ```javascript
 let firstName = null
@@ -118,7 +117,7 @@ typeof null	// object
 
 <br>
 
-#### 💡 Boolean 타입
+### 💡 Boolean 타입
 
 - 논리적 참 또는 거짓을 나타내는 타입
 - `true` 또는 `false` 로 표현
@@ -142,8 +141,7 @@ typeof null	// object
 ## 연산자
 
 <hr>
-
-#### 🔔 할당 연산자
+### 🔔 할당 연산자
 
 ```javascript
 let x = 0
@@ -175,7 +173,7 @@ console.log(x)	// 7
 
 <br>
 
-#### 🔔 비교 연산자
+### 🔔 비교 연산자
 
 ```javascript
 const numOne = 1
@@ -195,7 +193,7 @@ console.log(charOne < charTwo)	// false
 
 <br>
 
-#### 🔔 동등 비교 연산자(==)
+### 🔔 동등 비교 연산자(==)
 
 ```javascript
 const a = 1004
@@ -218,9 +216,7 @@ console.log(c + d)	// 2
 
 <br>
 
-
-
-#### 🔔 일치 비교 연산자(===)
+### 🔔 일치 비교 연산자(===)
 
 ```javascript
 const a = 1004
@@ -239,7 +235,7 @@ console.log(c === d)	// false
 
 <br>
 
-#### 🔔 논리 연산자
+### 🔔 논리 연산자
 
 ```javascript
 // and 연산
@@ -271,7 +267,7 @@ console.log(!'Bongour!')	// false
 
 <br>
 
-#### 🔔 삼항 연산자
+### 🔔 삼항 연산자
 
 ```javascript
 console.log(true ? 1 : 2)	// 1

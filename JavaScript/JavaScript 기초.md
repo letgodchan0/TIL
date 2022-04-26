@@ -30,7 +30,7 @@
 - 주요 객체
 
   - window : DOM을 표현하는 창(브라우저 탭), 최상위 객체
-  - document : 페이지 컨텐츠의 Entry Point 역할을 하며, , 등과 같은 수많은 다른 요소를 포함
+  - document : 페이지 컨텐츠의 Entry Point 역할을 하며, `<head>, <body>` 등과 같은 수많은 다른 요소를 포함
 
 - 파싱 (Parsing)
 

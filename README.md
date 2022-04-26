@@ -48,10 +48,14 @@
 
 - ### 기초
 
-  - [Java Script - Intro](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20%EA%B8%B0%EC%B4%88.md)
-  - [Java Script - 변수와 식별자](https://github.com/letgodchan0/TIL/blob/main/JavaScript/Java%20Script%20%EB%AC%B8%EB%B2%951.md)
-  - [Java Script - 데이터 타입과 연산자](https://github.com/letgodchan0/TIL/blob/main/JavaScript/Java%20Script%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%ED%83%80%EC%9E%85%2C%20%EC%97%B0%EC%82%B0%EC%9E%90.md)
-  - [Java Script - 조건문, 반복문](https://github.com/letgodchan0/TIL/blob/main/JavaScript/Java%20Script%20-%20%EC%A1%B0%EA%B1%B4%EB%AC%B8%2C%20%EB%B0%98%EB%B3%B5%EB%AC%B8.md)
+  - [JavaScript - Intro](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20%EA%B8%B0%EC%B4%88.md)
+  - [JavaScript - 변수와 식별자](https://github.com/letgodchan0/TIL/blob/main/JavaScript/Java%20Script%20%EB%AC%B8%EB%B2%951.md)
+  - [JavaScript - 데이터 타입과 연산자](https://github.com/letgodchan0/TIL/blob/main/JavaScript/Java%20Script%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%ED%83%80%EC%9E%85%2C%20%EC%97%B0%EC%82%B0%EC%9E%90.md)
+  - [JavaScript - 조건문, 반복문](https://github.com/letgodchan0/TIL/blob/main/JavaScript/Java%20Script%20-%20%EC%A1%B0%EA%B1%B4%EB%AC%B8%2C%20%EB%B0%98%EB%B3%B5%EB%AC%B8.md)
+  - [JavaScript - 함수](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20%ED%95%A8%EC%88%98.md)
+  - [JavaScript - 문자열](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20(String).md)
+  - [JavaScript - 배열](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20%EB%B0%B0%EC%97%B4.md)
+  - [JavaScript - object, json, lodash](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20Object.md)
 
 ## Python
 

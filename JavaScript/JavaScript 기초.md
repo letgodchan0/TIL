@@ -45,7 +45,7 @@
 
 - 자바스크립트가 브라우저와 소통하기 위한 모델
 
-- 브라우저의 창이나 프레임을 추상화해서 프로그래밍적으로 제어할 수 있도록 제공하는 순단
+- 브라우저의 창이나 프레임을 추상화해서 프로그래밍적으로 제어할 수 있도록 제공하는 수단
 
   - 버튼, URL 입력창, 타이틀 바 등 브라우저 윈도우 및 웹 페이지 일부분을 제어 가능
 
@@ -54,14 +54,3 @@
 - BOM - 조작
 
   ![image-20220425194411709](JavaScript%20%EA%B8%B0%EC%B4%88.assets/image-20220425194411709.png)
-
-<details class="details-reset details-overlay details-overlay-dark" id="jumpto-line-details-dialog" style="box-sizing: border-box; display: block;"><summary data-hotkey="l" aria-label="Jump to line" role="button" style="box-sizing: border-box; display: list-item; cursor: pointer; list-style: none; transition: color 80ms cubic-bezier(0.33, 1, 0.68, 1) 0s, background-color, box-shadow, border-color;"></summary></details>
-
-
-					
-				
-				
-						
-				
-			
-

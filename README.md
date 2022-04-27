@@ -46,7 +46,7 @@
 
 ## Java Script
 
-- ### 기초
+- ### Core
 
   - [JavaScript - Intro](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20%EA%B8%B0%EC%B4%88.md)
   - [JavaScript - 변수와 식별자](https://github.com/letgodchan0/TIL/blob/main/JavaScript/Java%20Script%20%EB%AC%B8%EB%B2%951.md)
@@ -56,6 +56,11 @@
   - [JavaScript - 문자열](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20(String).md)
   - [JavaScript - 배열](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20%EB%B0%B0%EC%97%B4.md)
   - [JavaScript - object, json, lodash](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20Object.md)
+  
+- ### DOM 조작과 Event
+
+  - [JavaScript - DOM 조작](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20DOM%20%EC%A1%B0%EC%9E%91.md)
+
 
 ## Python
 

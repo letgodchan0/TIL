@@ -44,7 +44,7 @@
   - [Bootstrap 기본](https://github.com/letgodchan0/TIL/blob/main/Web/Bootstrap/Bootstrap.md)
   - [Bootstrap 그리드](https://github.com/letgodchan0/TIL/blob/main/Web/Bootstrap/Bootstrap_grid_system.md)
 
-## Java Script
+## JavaScript
 
 - ### Core
 
@@ -60,6 +60,7 @@
 - ### DOM 조작과 Event
 
   - [JavaScript - DOM 조작](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20DOM%20%EC%A1%B0%EC%9E%91.md)
+  - [JavaScript - Event](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20Event.md)
 
 
 ## Python

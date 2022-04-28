@@ -9,8 +9,9 @@
 
 ### 🌈 addEventListener
 
+1. '나를 눌러봐' 버튼을 눌렀을 때 alert 메세지 띄우기
+
 ```js
-// 1번
 <button id="my-button">나를 눌러봐!!</button>
 <p id="my-paragraph"> </p>
 
@@ -19,8 +20,9 @@ const myButton = document.querySelector('#my-button')
 myButton.addEventListener('click', alertMessage)
 ```
 
+2. `form` 태그에 입력한 내용을 바로 위 `P` 태그에 넣기!
+
 ```js
-// 2번
 <form action="#">
     <label for="my-text-input">내용을 입력하세요.</label>
 	<input id="my-text-input" type="text">
@@ -39,8 +41,9 @@ myTextInput.addEventListener('input', function (event) {
 })
 ```
 
+3. 내가 입력한대로 라벨 태그의 색상 변경하기
+
 ```js
-// 3번
 <h2>Change My Color</h2>
 <label for="change-color-input">원하는 색상을 영어로 입력하세요.</label>
 <input id="change-color-input"></input>
@@ -94,6 +97,8 @@ colorInput.addEventListener('input', onColorInput)
 
 <br>
 
+1. 체크박스를 클릭해도 체크가 되지 않음!
+
 ```js
 <!-- 1. checkbox -->
 <input type="checkbox" id="my-checkbox">
@@ -106,9 +111,9 @@ checkBox.addEventListener('click', function (event) {
 })
 ```
 
-- 체크박스를 클릭했도 체크가 되지 않음!
-
 <br>
+
+2. 제출해도 제출되지 않음.. 리셋시켜서 제출된 듯한 느낌이 날 수 있음!!
 
 ```js
 <!-- 2. submit -->
@@ -126,9 +131,9 @@ formTag.addEventListener('submit', function (event) {
 })
 ```
 
-- 제출해도 제출되지 않음.. 리셋되서 제출된 듯한 느낌이 날 수 있음!
-
 <br>
+
+3. 링크를 클릭해도 이동하지 않음!
 
 ```js
 <!-- 3. link -->
@@ -142,9 +147,11 @@ aTag.addEventListener('click', function (event) {
 })
 ```
 
-- 링크를 클릭해도 이동하지 않음!
+
 
 <br>
+
+4. 마우스 스크롤해도 되지 않음..ㄷㄷ
 
 ```js
 <!-- 4. scroll -->
@@ -155,4 +162,3 @@ document.addEventListener('scroll', function (event) {
 })
 ```
 
-- 마우스 스크롤해도 되지 않음..ㄷㄷ

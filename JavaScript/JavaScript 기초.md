@@ -11,7 +11,7 @@
 ## 브라우저에서 할 수 있는 일
 
 - DOM(Document Object Model) 조작
-  - 문서(HTML) whwkr
+  - 문서(HTML) 조작
 - BOM(Browser Object Model) 조작
   - navigator, screen location
 - JavaScript Core (ECMAScript)

@@ -127,6 +127,35 @@ const email = userInfo.email	=>	const { email } = userInfo.email
 const {name, userId} = userInfo
 ```
 
+```js
+const user = {
+    name: '교수님',
+    age : '20',
+    balance : 100
+}
+
+// 아래 2개는 같은 코드, 키와 변수명이 같아야 함
+const { name } = user
+const name = user.name
+
+// 아래 2개는 다른 코드
+const { erum } = user
+const name = user.name
+
+// 근데 이건 가능
+const { name, age, balance } = user
+
+// 근데 이걸 쓰긴해?? 아래처럼 씀
+function printUser( { name, age, balance }) {
+    console.log(age, balance, name)
+}
+printUser(user)	// 20 100 '교수님'
+```
+
+
+
+
+
 <br>
 
 ### 📚 ES6 문법 (5) - Spread operator
@@ -196,7 +225,9 @@ const obj = {
     PI: 3.14
     radiuses: [1, 2, 3, 4, 5],
         printArea: function () {
+            // 여기 this는 obj
             this.radiuses.forEach(function (r) {
+                // 여기 this는 window
                 console.log(this.PI * r * r)
             }.bind(this))                               
         },
@@ -227,6 +258,35 @@ const obj = {
   - 완전히 동일하게 동작
 
 <br>
+
+```js
+// 요약
+
+function getFullName() {
+    return this.firstName + this.lastName
+}
+// 이상태에서 this는 window
+getFullName()
+
+
+const me = {
+    firstName: '김'.
+    lastName: '피자',
+    'getFullName' : getFullName
+}
+// 메서드일때 this는 객체, 쩜(.)을 통해 부를때
+me.getFullName()
+
+const you = {
+    firstNmae: '이',
+    lastNmae : '치킨'
+    qwer: getFullName,
+}
+// 마찬가지로 메서드이기 때문에 this가 you임
+you.qwer()	'치킨이'
+```
+
+
 
 ## 💡 lodash
 

@@ -61,6 +61,12 @@
 
   - [JavaScript - DOM 조작](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20DOM%20%EC%A1%B0%EC%9E%91.md)
   - [JavaScript - Event](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20Event.md)
+  
+- ### Ajax
+
+  - [JavaScript - 비동기 처리 기본](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20AJAX%EA%B8%B0%EC%B4%88.md)
+  - [JavaScript - Promise & Axios](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20Ajax%20(Promise).md)
+
 
 
 ## Python

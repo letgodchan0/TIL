@@ -11,6 +11,8 @@
 
 - [영화 API 사용법](https://github.com/letgodchan0/TIL/blob/main/API/%EC%98%81%ED%99%94%20API%20%EC%82%AC%EC%9A%A9%EA%B8%B0.md)
 
+<br>
+
 ## Git
 
 - [Git Init 부터 Git Hub push까지](https://github.com/letgodchan0/TIL/blob/main/git/git_%EA%B8%B0%EC%B4%88.md)
@@ -20,11 +22,15 @@
 - [Git Reset & Revert](https://github.com/letgodchan0/TIL/blob/main/git/04_reset_revert.md)
 - [Git으로 협업하기](https://github.com/letgodchan0/TIL/blob/main/git/git%EC%9C%BC%EB%A1%9C%20%ED%98%91%EC%97%85%ED%95%98%EA%B8%B0.md)
 
-## Markdown
+<br>
+
+## 📂 Markdown
 
 - [마크다운 문법](https://github.com/letgodchan0/TIL/blob/main/markdown/markdown.md)
 
-## Web
+<br>
+
+## 🌐 Web
 
 - ### HTML
 
@@ -43,8 +49,10 @@
 
   - [Bootstrap 기본](https://github.com/letgodchan0/TIL/blob/main/Web/Bootstrap/Bootstrap.md)
   - [Bootstrap 그리드](https://github.com/letgodchan0/TIL/blob/main/Web/Bootstrap/Bootstrap_grid_system.md)
+  
+  <br>
 
-## JavaScript
+## 🌐 JavaScript
 
 - ### Core
 
@@ -67,9 +75,10 @@
   - [JavaScript - 비동기 처리 기본](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20AJAX%EA%B8%B0%EC%B4%88.md)
   - [JavaScript - Promise & Axios](https://github.com/letgodchan0/TIL/blob/main/JavaScript/JavaScript%20-%20Ajax%20(Promise).md)
 
+  <br>
 
 
-## Python
+## 📂 Python
 
 - [파이썬 기초](https://github.com/letgodchan0/TIL/blob/main/python/%ED%8C%8C%EC%9D%B4%EC%8D%AC_%EA%B8%B0%EC%B4%88.md)
 - [파이썬 제어문](https://github.com/letgodchan0/TIL/blob/main/python/%ED%8C%8C%EC%9D%B4%EC%8D%AC_%EC%A0%9C%EC%96%B4%EB%AC%B8.md)
@@ -78,39 +87,32 @@
 - [파이썬 에러 및 예외 처리](https://github.com/letgodchan0/TIL/blob/main/python/%ED%8C%8C%EC%9D%B4%EC%8D%AC_%EC%97%90%EB%9F%AC%EB%B0%8F%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC.md)
 - [파이썬 객체지향 프로그래밍](https://github.com/letgodchan0/TIL/blob/main/python/%ED%8C%8C%EC%9D%B4%EC%8D%AC_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)
 
-## Django
+
+
+<br>
+
+## 🌐 Django
 
 - [django - 설치 및 프로젝트&앱 생성, 요청과 응답, Template](https://github.com/letgodchan0/TIL/blob/main/Django/Django%2001.md)
-
 - [django - HTML_form, Variable Routing, Namespace, Static](https://github.com/letgodchan0/TIL/blob/main/Django/Django%2002.md)
-
 - [django - Model](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Model.md)
-
 - [django - CRUD](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20CRUD.md)
-
 - [django - 게시판 구현](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.md)
-
 - [django - Form](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Form.md)
-
 - [django - ModelForm](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20ModelForm.md)
-
 - [django - HTTP requests](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20HTTP%20requests.md)
-
 - [django - Media files (이미지 업로드)](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Media%20files.md)
-
 - [django - Authentication, 쿠키/세션](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Authentication%20System.md)
-
 - [django - 1:N, Custon User 반영](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Model%20Relationship.md)
-
 - [django - M:N, ManyToManyField](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Model%20Relationship2.md)
-
 - [django - 좋아요, 팔로우 기능 구현](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20%EC%A2%8B%EC%95%84%EC%9A%94%2C%20%ED%8C%94%EB%A1%9C%EC%9A%B0%20%EA%B8%B0%EB%8A%A5%20%EA%B0%9C%EB%B0%9C.md)
-
 - [django - 게시글 관련 REST API 서버 구축](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20REST%20API%20%EC%84%9C%EB%B2%84%20%EA%B5%AC%ED%98%84.md)
 
-  
+<br>
 
-## SQL
+
+
+## 📂 SQL
 
 - [sql 기초](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EA%B8%B0%EC%B4%88.md)
 - [sql 문법 - Insert, Select, Limit, Offset, Distinct, Update](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EB%AC%B8%EB%B2%95.md)
@@ -118,7 +120,9 @@
 - [위의 내용 요약](https://github.com/letgodchan0/TIL/blob/main/db/SQL_digest.md)
 - [sql_연습](https://github.com/letgodchan0/TIL/blob/main/db/SQL_ORM_%EC%97%B0%EC%8A%B5.md)
 
-## 자료구조 & 알고리즘
+<br>
+
+## 📖 자료구조 & 알고리즘
 
 - Array
     - [Array 1 - 버블 정렬, 카운팅 정렬, 완전 탐색, 그리디](https://github.com/letgodchan0/TIL/blob/main/aps/Array%201.md)

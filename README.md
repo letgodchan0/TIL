@@ -7,13 +7,15 @@
 
 </div>
 
-## API
+<br>
+
+## 🗞 API
 
 - [영화 API 사용법](https://github.com/letgodchan0/TIL/blob/main/API/%EC%98%81%ED%99%94%20API%20%EC%82%AC%EC%9A%A9%EA%B8%B0.md)
 
 <br>
 
-## Git
+## 🗂 Git
 
 - [Git Init 부터 Git Hub push까지](https://github.com/letgodchan0/TIL/blob/main/git/git_%EA%B8%B0%EC%B4%88.md)
 - [Git branch, switch](https://github.com/letgodchan0/TIL/blob/main/git/01_branch.md)

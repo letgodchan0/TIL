@@ -155,11 +155,105 @@ const app6 = new Vue({
 
 <br>
 
-# 🪴 Vue 기본 문법
+# 🔰 Vue 기본 문법
 
 [Vue 인스턴스](https://kr.vuejs.org/v2/guide/instance.html)
 
 <hr>
 
+## 🪴 Vue instance
 
+```js
+const app = new Vue({
+    
+})
+```
+
+- 모든 Vue 앱은 Vue 함수로 새 인스턴스를 만드는 것부터 시작!
+- Vue 인스턴스를 생성할 때는 Options 객체를 전달해야 함
+- 여러 Options들을 사용하여 원하는 동작을 구현
+- [전체 옵션 목록](https://kr.vuejs.org/v2/api/#propsData)
+
+<br>
+
+## 🪴 Options/DOM - 'el'
+
+```js
+const app = new Vue({
+    el: '#app'
+})
+```
+
+- Vue 인스턴스에 연결(마운트)할 기존 DOM 요소가 필요!
+- CSS 선택자 문자열 혹은 HTML Element로 작성
+- new를 이용한 인스턴스 생성 때만 사용
+
+<br>
+
+## 🪴 Options/Data - 'data'
+
+```js
+const app = new Vue({
+    el: '#app',
+    data: {
+        message: 'Hello',
+    }
+})
+```
+
+- Vue 인스턴스의 데이터 객체로 Vue 인스턴스의 상태 데이터를 정의하는 곳
+- Vue template에서 interpolation을 통해 접근 가능
+- `v-bind`, `v-on`과 같은 디렉티브 표현식에서도 사용 가능
+- Vue 객체 내 다른 함수에서 this 키워드를 통해 접근 가능
+
+<br>
+
+## 🪴 Options/Data - 'methods'
+
+```js
+const app = vew Vue({
+    el: '#app',
+    data: {
+        message: 'Hello',
+    },
+    methods: {
+        greeting: function () {
+            console.log('hello')
+        }
+    }
+})
+```
+
+- Vue 인스턴스에 추가할 메서드
+- Vue template에서 interpolation을 통해 접근 가능
+- `v-on`과 같은 디렉티브 표현식에서도 사용 가능
+- Vue 객체 내 다른 함수에서 this 키워드를 통해 접근 가능
+- [주의!]
+  - 화살표 함수를 메서드를 정의하는데 사용하면 안됩니다!!
+  - 화살표 함수가 부모 컨텍스트를 바인딩하기 때문에 this는 Vue 인스턴스가 아님.
+
+<br>
+
+## 🪴 'this' in Vue.js
+
+```js
+const app = new Vue({
+    el: '#app',
+    data: {
+        number: 10,
+    },
+    methods: {
+        myFunc: function () {
+            console.log(this)	// Vue instance
+        },
+        yourFunc: () => {
+            console.log(this)	// window
+        }
+    }
+})
+```
+
+- Vue 함수 객체 내에서 vue 인스턴스를 가리킴
+
+<br>
 

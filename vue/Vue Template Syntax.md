@@ -120,7 +120,7 @@
 ```html
 <div id="app">
     <!-- 1 -->
-	<div v-if="seen">seen이 true일때만 렌더링.</div>
+<div v-if="seen">seen이 true일때만 렌더링.</div>
     
     <!-- 2 -->
     <div v-if="myType === 'A'">

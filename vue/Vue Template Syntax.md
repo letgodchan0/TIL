@@ -119,33 +119,33 @@
 
 ```html
 <div id="app">
-    <!-- 1 -->
-	<div v-if="seen">seen이 true일때만 렌더링.</div>
-    
-    <!-- 2 -->
-    <div v-if="myType === 'A'">
-    	A
-    </div>
-    <div v-else-if="myType === 'B'">
-        B
-    </div>
-    <div v-else-if="myType === 'C'">
-        C
-    </div>
-    <div v-else>
-        Not A/B/C
-    </div>
+  <!-- 1 -->
+  <div v-if="seen">seen이 true일때만 렌더링.</div>
+  
+  <!-- 2 -->
+  <div v-if="myType === 'A'">
+    A
+  </div>
+  <div v-else-if="myType === 'B'">
+    B
+  </div>
+  <div v-else-if="myType === 'C'">
+      C
+  </div>
+  <div v-else>
+      Not A/B/C
+  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
-	const app = new Vue({
-        el: '#app',
-        data: {
-            seen: false,
-            myType: 'A',
-        }
-    })
+  const app = new Vue({
+      el: '#app',
+      data: {
+          seen: false,
+          myType: 'A',
+      }
+  })
 </script>
 ```
 

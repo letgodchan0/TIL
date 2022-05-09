@@ -120,7 +120,7 @@
 ```html
 <div id="app">
     <!-- 1 -->
-<div v-if="seen">seen이 true일때만 렌더링.</div>
+	<div v-if="seen">seen이 true일때만 렌더링.</div>
     
     <!-- 2 -->
     <div v-if="myType === 'A'">
@@ -193,8 +193,8 @@
             fruits: ['apple', 'banana', 'coconut'],
             todos: [
                 { id: 1, title: 'todo1', completed: true },
-         	 	{ id: 2, title: 'todo2', completed: false },
-         		{ id: 3, title: 'todo3', completed: true },
+                { id: 2, title: 'todo2', completed: false },
+                { id: 3, title: 'todo3', completed: true },
             ]
         }
     })
@@ -214,48 +214,48 @@
 
 ```html
 <div id="app">
-    <!-- 메서드 핸들러 -->
-    <button v-on:click="doAlert">Button</button>
-    <button @click="doAlert">Button</button>
-    <button @click="onInputEnter">Button</button>
+  <!-- 메서드 핸들러 -->
+  <button v-on:click="doAlert">Button</button>
+  <button @click="doAlert">Button</button>
+  <button @click="onInputEnter">Button</button>
     
-    <!-- 기본 동작 방지 -->
-   	<form action="/articles/" @submit.prevent>
-        <button>Submit</button>
-    </form>
+  <!-- 기본 동작 방지 -->
+  <form action="/articles/" @submit.prevent>
+      <button>Submit</button>
+  </form>
     
-    <!-- 키 별칭을 이용한 키 입력 수식어 -->
-    <input @keyup.enter="onEnter">
-    <input @keyup.enter="onEnter(something)">
-	    
-   	{{ message }}
-    <button @click="changeMessage">Button</button>
+  <!-- 키 별칭을 이용한 키 입력 수식어 -->
+  <input @keyup.enter="onEnter">
+  <input @keyup.enter="onEnter(something)">
+    
+  {{ message }}
+  <button @click="changeMessage">Button</button>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
-	const app = new Vue({
-        el: '#app',
-        data: {
-            message: 'Hello Vue.js',
-        },
-        methods: {
-            doAlert: function () {
-                alert('hello!')
-            },
-            onEnter: function (something) {
-                console.log(event)
-                console.log(event.target.value)
-                console.log(something)
-            },
-            onInputEnter: function (onInputValue) {
-                console.log(onInputValue)
-            },
-            changeMessage: function () {
-                this.message = "New message!"
-            }
-        }
-    })
+  const app = new Vue({
+      el: '#app',
+      data: {
+          message: 'Hello Vue.js',
+      },
+      methods: {
+          doAlert: function () {
+              alert('hello!')
+          },
+          onEnter: function (something) {
+              console.log(event)
+              console.log(event.target.value)
+              console.log(something)
+          },
+          onInputEnter: function (onInputValue) {
+              console.log(onInputValue)
+          },
+          changeMessage: function () {
+              this.message = "New message!"
+          }
+      }
+  })
 </script>
 ```
 

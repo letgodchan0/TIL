@@ -6,7 +6,7 @@
 
 <BR>
 
-## SFC (Single File Component)
+## 🪴 SFC (Single File Component)
 
 - Vue의 컴포넌트 기반 개발의 핵심 특징
 - 하나의 컴포넌트 `.vue` 확장자를 가진 하나의 파일 안에서 작성되는 코드의 결과물
@@ -16,7 +16,7 @@
 
 <BR>
 
-## Vue Component 구조 예시![image-20220510234640279](C:/Users/livem/AppData/Roaming/Typora/typora-user-images/image-20220510234640279.png)
+## 🪴 Vue Component 구조 예시![image-20220510234640279](Vue%20Component%20&%20CLI.assets/image-20220510234640279.png)
 
 - 한 화면 안에서도 기능 별로 각기 다른 컴포넌트가 존재
   - 하나의 컴포넌트는 여러 개의 하위 컴포넌트를 가질 수 있음
@@ -27,7 +27,7 @@
 
 <BR>
 
-## Vue CLI
+## 🪴 Vue CLI
 
 - Vue.js 개발을 위한 표준 도구
 - 프로젝트의 구성을 도와주는 역할을 하며 Vue 개발 생태계에서 표준 tool 기준을 목표로 함
@@ -37,7 +37,7 @@
 
 
 
-## Node.js
+## 🪴 Node.js
 
 - 자바스크립트를 브라우저가 아닌 환경에서도 구동할 수 있도록 하는 자바스크립트 런타임 환경
   - 브라우저 밖을 벗어 날 수 없던 자바스크립트 언어의 태생적 한계를 해결
@@ -48,7 +48,7 @@
 
 
 
-## NPM (Node Package Manage)
+## 🪴 NPM (Node Package Manage)
 
 - 자바스크립트 언어를 위한 패키지 관리자
   - Python에 pip가 있다면 Node.js에는 NPM
@@ -60,7 +60,7 @@
 
 
 
-## Vue CLI 시작하기
+## 🪴 Vue CLI 시작하기
 
 1. 설치
 

@@ -54,49 +54,12 @@
 
 <hr>
 
-- props는 부모(상위) 컴포넌트의 정보를 전달하기 위한 사용자 지정 특성
-- 자식(하위) 컴포넌트는 props 옵션을 사용하여 수신하는 props를 명시적으로 선언해야 함
-- 즉, 데이터는 props 옵션을 사용하여 자식 컴포넌트로 전달됨
+1. 자식 컴포넌트(About.vue)에 보낼 prop 데이터 선언
+   - 작성법
+     - prop-data-name = "value"
 
-- [공식문서 참고](https://kr.vuejs.org/v2/api/?#props)
-
-<hr>
-
-```vue
-// App.vue
-
-<template>
-  <div id="app">
-  	<about my-message="This is prop data"></about>    
-  </div>
-</template>
-```
-
-- 자식 컴포넌트(About.vue)에 보낼 prop 데이터 선언
-- 작성법
-  - prop-data-name = "value"
-
-```vue
-// About.vue
-
-<template>
-  <div>
-  	<h1>About</h1>    
-    <h2>{{ myMessage }}</h2>
-  </div>
-</template>
-
-<script>
-export default {
-    name: 'About',
-    props: {
-        myMessage: String,
-    }
-}
-</script>
-```
-
-- 수신할 prop 데이터를 명시적으로 선언 후 사용
+2. 수신할 prop 데이터를 명시적으로 선언 후 사용
+3. [공식문서 참고](https://kr.vuejs.org/v2/api/?#props)
 
 <br>
 

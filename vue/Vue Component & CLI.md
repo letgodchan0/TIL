@@ -151,5 +151,35 @@ $ npm run serve
   - Module Bundler
   - 모듈 간의 의존성 문제를 해결하기 위한 도구
 
+<br>
 
+## 🪴Vue 프로젝트 구조
+
+- node_modules
+  - node.js 환경의 여러 의존성 모듈
+  - 파이썬의 `venv`라서 git에 올리면 안된다 ㅎㅎ
+  - vue 프로젝트를 실행하면 gitignore가 알아서 만들어져 있음..!
+- public/index.html
+  - Vue 앱의 뼈대가 되는 파일
+  - 실제 제공되는 단일 html 파일
+
+- src/assets
+  - webpack에 의해 빌드 된 정적 파일
+- src/components
+  - 하위 컴포넌트들이 위치
+- src/App.vue
+  - 최상위 컴포넌트
+- src/main.js
+  - webpack이 빌드를 시작할 때 가장 먼저 불러오는 entry point
+  - 실제 단일 파일에서 DOM과 data를 연결 했던 것과 동일한 작업이 이루어지는 곳
+  - Vue 전역에서 활용 할 모듈을 등록할 수 있는 파일
+- babel.config.js
+  - babel 관련 설정이 작성된 파일
+- package.json
+  - 프로젝트의 종속성 목록과 지원되는 브라우저에 대한 구성 옵션이 포함
+- package-lock.json
+  - node_modules에 설치되는 모듈과 관련된 모든 의존성을 설정 및 관리
+  - 팀원 및 배포 환경에서 정확히 동일한 종속성을 설치하도록 보장하는 표현
+  - 사용 할 패키지의 버전을 고정
+  - 개발 과정 간의 의존성 패키지 충돌 방지
 

@@ -23,7 +23,7 @@ $ vue add router
 
 3. History mode 사용 여부 (Yes)
 
-![image-20220511012742089](C:/Users/livem/AppData/Roaming/Typora/typora-user-images/image-20220511012742089.png)
+![image-20220511012742089](Vue%20Router.assets/image-20220511012742089.png)
 
 <br>
 

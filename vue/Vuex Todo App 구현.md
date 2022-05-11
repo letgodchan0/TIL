@@ -2,7 +2,7 @@
 
 vuex를 활용해서 간단한 Todo App을 구현해보려고 한다. 컴포넌트는 아래와 같이 구성!
 
-![image-20220511235546321](C:/Users/livem/AppData/Roaming/Typora/typora-user-images/image-20220511235546321.png)
+![image-20220511235546321](Vuex%20Todo%20App%20%EA%B5%AC%ED%98%84.assets/image-20220511235546321.png)
 
 <br>
 

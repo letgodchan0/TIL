@@ -1,6 +1,5 @@
 <div align="center">
-
-# 🌱 Today, I Learned
+## 🌳 Today, I Learned
 
 ## 매일 배운 내용 기록하기✏️
 ### 👉 [블로그](https://velog.io/@letgodchan0)
@@ -63,10 +62,12 @@
 
 ## 🔰 Vue
 
-- [Vue - Intro, SPA와CSR](https://github.com/letgodchan0/TIL/blob/main/vue/Vue%20Intro.md)
-
+- [Vue - MVVM 패턴, SPA와 CSR](https://github.com/letgodchan0/TIL/blob/main/vue/Vue%20Intro.md)
 - [Vue - 공식문서 시작하기, 기본 문법](https://github.com/letgodchan0/TIL/blob/main/vue/Vue%20%EC%B0%8D%EC%96%B4%EB%A8%B9%EA%B8%B0.md)
 - [Vue - 디렉티브](https://github.com/letgodchan0/TIL/blob/main/vue/Vue%20Template%20Syntax.md)
+- [Vue - Component 기초, Webpack, Babel](https://github.com/letgodchan0/TIL/blob/main/vue/Vue%20Component%20%26%20CLI.md)
+- [Vue - props & emit](https://github.com/letgodchan0/TIL/blob/main/vue/Vue%20Props%20%26%20Emit.md)
+- [Vue - Router](https://github.com/letgodchan0/TIL/blob/main/vue/Vue%20Router.md)
 
 <br>
 

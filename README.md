@@ -12,7 +12,7 @@
 
 ## 🗞 API
 
-- [영화 API 사용법](https://github.com/letgodchan0/TIL/blob/main/API/%EC%98%81%ED%99%94%20API%20%EC%82%AC%EC%9A%A9%EA%B8%B0.md)
+- [📝 영화 API 사용법](https://github.com/letgodchan0/TIL/blob/main/API/%EC%98%81%ED%99%94%20API%20%EC%82%AC%EC%9A%A9%EA%B8%B0.md)
 
 <br>
 
@@ -68,6 +68,9 @@
 - [Vue - Component 기초, Webpack, Babel](https://github.com/letgodchan0/TIL/blob/main/vue/Vue%20Component%20%26%20CLI.md)
 - [Vue - props & emit](https://github.com/letgodchan0/TIL/blob/main/vue/Vue%20Props%20%26%20Emit.md)
 - [Vue - Router](https://github.com/letgodchan0/TIL/blob/main/vue/Vue%20Router.md)
+- [Vuex Intro](https://github.com/letgodchan0/TIL/blob/main/vue/Vuex%20Intro.md)
+  - [📝 Vuex로 Todo App 구현](https://github.com/letgodchan0/TIL/blob/main/vue/Vuex%20Todo%20App%20%EA%B5%AC%ED%98%84.md)
+
 
 <br>
 
@@ -77,7 +80,7 @@
 - [django - HTML_form, Variable Routing, Namespace, Static](https://github.com/letgodchan0/TIL/blob/main/Django/Django%2002.md)
 - [django - Model](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Model.md)
 - [django - CRUD](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20CRUD.md)
-- [django - 게시판 구현](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.md)
+- [📝 django - 게시판 구현](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20%EA%B2%8C%EC%8B%9C%ED%8C%90.md)
 - [django - Form](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Form.md)
 - [django - ModelForm](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20ModelForm.md)
 - [django - HTTP requests](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20HTTP%20requests.md)
@@ -86,7 +89,7 @@
 - [django - 1:N, Custon User 반영](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Model%20Relationship.md)
 - [django - M:N, ManyToManyField](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20Model%20Relationship2.md)
 - [django - 좋아요, 팔로우 기능 구현](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20%EC%A2%8B%EC%95%84%EC%9A%94%2C%20%ED%8C%94%EB%A1%9C%EC%9A%B0%20%EA%B8%B0%EB%8A%A5%20%EA%B0%9C%EB%B0%9C.md)
-- [django - 게시글 관련 REST API 서버 구축](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20REST%20API%20%EC%84%9C%EB%B2%84%20%EA%B5%AC%ED%98%84.md)
+- [📝 django - 게시글 관련 REST API 서버 구축](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20REST%20API%20%EC%84%9C%EB%B2%84%20%EA%B5%AC%ED%98%84.md)
 
 <br>
 

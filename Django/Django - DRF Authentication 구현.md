@@ -426,7 +426,7 @@ def profile(request, username):
 
 <br>
 
-### 10. 인증 관련 라이브러리 설치 및 세팅 [공식문서](https://django-rest-auth.readthedocs.io/en/latest/installation.html) 참고
+### 10. 인증 관련 라이브러리 설치 및 세팅 👉 [공식문서](https://django-rest-auth.readthedocs.io/en/latest/installation.html) 참고
 
 ```bash
 $ pip install django-allauth
@@ -531,7 +531,7 @@ urlpatterns = [
 
 <br>
 
-## Registration 👉 [공식문서](https://django-rest-auth.readthedocs.io/en/latest/installation.html) 
+## Registration (sinup 기능 제공) 👉 [공식문서](https://django-rest-auth.readthedocs.io/en/latest/installation.html) 
 
 ```python
 # settings.py

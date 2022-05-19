@@ -94,6 +94,11 @@ from .models import User
 admin.site.register(User, UserAdmin)
 ```
 
+```bash
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
+
 <br>
 
 ### 5. `models.py` 생성

@@ -449,7 +449,7 @@ INSTALLED_APPS = [
     # 3rd party apps
     'django_extensions'
     'rest_framework',
-    'rest_framework_authtoken', # token 기반 auth
+    'rest_framework.authtoken', # token 기반 auth
 
     # DRF auth 담당
     'dj_rest_auth',  # sinup 제외 모든 auth 관련 담당
@@ -484,6 +484,12 @@ urlpatterns = [
     path('dj-rest-auth/', include('dj_rest_auth.urls')),
 ]
 ```
+
+```bash
+$ python manage.py migrate
+```
+
+
 
 <br>
 
@@ -566,6 +572,10 @@ urlpatterns = [
 	...,
     path('api/v1/accounts/signup/', include('dj_rest_auth.registration.urls')),
 ]
+```
+
+```bash
+$ python manage.py migrate
 ```
 
 - 이 상태로 서버를 키기 전에 migrate를 해주어야 한다. 나는  settings.py에서 등록 해주는 `allauth.socialaccount,` 얘 때문에 migrate가 안되는 에러가 발생했는데, 이건 사용하지 않으니까 주석처리 하면서 해결했다.

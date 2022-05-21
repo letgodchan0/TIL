@@ -21,7 +21,7 @@ $ git commit -m "커밋 메세지"
 $ git push origin feature/login
 ```
 
-7. GitHub에서 내가 푸쉬한 내용 `merge request` 하기
+7. GitHub에서 내가 푸쉬한 내용 `pull request` 하기
 8. 다른 팀원들이 `pull request` 확인 후 `merge`
 9. GitHub에 반영 된 상태!!
 

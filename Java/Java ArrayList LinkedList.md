@@ -41,7 +41,7 @@ LinkedList<String> lnkList = new LinkedList<String>();
 
 <br>
 
-#### - add(E e) 데이터 입력
+### - add(E e) 데이터 입력
 
 ```java
 arrList.add(10);
@@ -50,7 +50,7 @@ arrList.add(20);
 
 <br>
 
-#### - get(int index) : 데이터 추출
+### - get(int index) : 데이터 추출
 
 ```java
 // 2번 인덱스의 값 추출
@@ -64,7 +64,7 @@ for (int i = 0; i < arrList.size(); i++){
 
 <br>
 
-#### - size() : 요소의 총 개수
+### - size() : 요소의 총 개수
 
 ```java
 System.out.print("리스트의 크기: " + arrList.sieze());
@@ -72,7 +72,7 @@ System.out.print("리스트의 크기: " + arrList.sieze());
 
 <br>
 
-#### - remove(int i) : 특정 데이터 삭제
+### - remove(int i) : 특정 데이터 삭제
 
 ```java
 // 1번째 데이터 삭제
@@ -81,7 +81,7 @@ arrList.remove(1);
 
 <br>
 
-#### - remove(Object o)
+### - remove(Object o)
 
 ```java
 // "아침" 데이터 삭제, arrList = ["아침", "저녁"]
@@ -90,9 +90,7 @@ arrList.remove("아침");
 
 <br>
 
-
-
-#### - clear() : 모든 데이터 삭제
+### - clear() : 모든 데이터 삭제
 
 ```java
 // arrList 내 모든 요소 삭제
@@ -101,7 +99,7 @@ arrList.clear();
 
 <br>
 
-#### - contains(Object o) : 특정 객체가 포함되어 있는지 체크
+### - contains(Object o) : 특정 객체가 포함되어 있는지 체크
 
 ```java
 // arrList안에 "저녁"이 있는지 체크, true/false를 반환
@@ -110,7 +108,7 @@ arrList.contains("저녁");
 
 <br>
 
-#### - isEmpty() : 비어있는지 체크(true, false)
+### - isEmpty() : 비어있는지 체크(true, false)
 
 ```java
 // 리스트 비어 있는지 체크
@@ -119,7 +117,7 @@ arrList.isEmpty()
 
 <br>
 
-#### - addAll(Collection c) :기존 등록된 컬렉션 데이터 입력
+### - addAll(Collection c) :기존 등록된 컬렉션 데이터 입력
 
 ```java
 ArrayList<String> tmpList = new ArrayList<>();
@@ -133,7 +131,7 @@ arrList.addAll(tmpList);
 
 <br>
 
-#### - iterator() : iterator 인터페이스 객체 반환
+### - iterator() : iterator 인터페이스 객체 반환
 
 ```java
 Iterator<Integer> iter = arrList.iterator();
@@ -144,7 +142,7 @@ while (iter.hasNext()) {
 
 <br>
 
-#### - set() : 요소 변경
+### - set() : 요소 변경
 
 ```java
 // 1번째 요소를 20으로 변경
@@ -153,7 +151,7 @@ arrList.set(1, 20)
 
 <br>
 
-#### - sort() : 요소의 정렬
+### - sort() : 요소의 정렬
 
 ```java
 Collections.sort(arrList)

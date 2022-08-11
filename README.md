@@ -112,7 +112,7 @@
 - [django - 좋아요, 팔로우 기능 구현](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20%EC%A2%8B%EC%95%84%EC%9A%94%2C%20%ED%8C%94%EB%A1%9C%EC%9A%B0%20%EA%B8%B0%EB%8A%A5%20%EA%B0%9C%EB%B0%9C.md)
 - [📝 게시글 관련 REST API 서버 구축](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20REST%20API%20%EC%84%9C%EB%B2%84%20%EA%B5%AC%ED%98%84.md)
 - [django - CORS 기초 및 라이브러리](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20CORS.md)
-- [django - DRF Authentication (토큰 기반 및 JWT)](https://github.com/letgodchan0/TIL/blob/main/Django/REST%20API%20Cors%20%26%20Authentication.md)
+- [django - DRF Authentication (토큰 및 JWT)](https://github.com/letgodchan0/TIL/blob/main/Django/REST%20API%20Cors%20%26%20Authentication.md)
 - [📝 DRF Authentication 기능이 있는 REST API 서버 구축](https://github.com/letgodchan0/TIL/blob/main/Django/Django%20-%20DRF%20Authentication%20%EA%B5%AC%ED%98%84.md)
 
 <br>
@@ -150,8 +150,6 @@
 - [파이썬 함수](https://github.com/letgodchan0/TIL/blob/main/python/%ED%8C%8C%EC%9D%B4%EC%8D%AC_%ED%95%A8%EC%88%98.md)
 - [파이썬 에러 및 예외 처리](https://github.com/letgodchan0/TIL/blob/main/python/%ED%8C%8C%EC%9D%B4%EC%8D%AC_%EC%97%90%EB%9F%AC%EB%B0%8F%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC.md)
 - [파이썬 객체지향 프로그래밍](https://github.com/letgodchan0/TIL/blob/main/python/%ED%8C%8C%EC%9D%B4%EC%8D%AC_%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)
-
-
 
 <br>
 

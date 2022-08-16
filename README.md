@@ -36,6 +36,7 @@
 ### ⛵️ Docker
 
 - [도커 기초 및 명령어](https://github.com/letgodchan0/TIL/blob/main/Docker/Docker%20%EA%B8%B0%EC%B4%88.md)
+- [Nginx 기본 개념](https://github.com/letgodchan0/TIL/blob/main/Docker/%E2%9B%B5%EF%B8%8F%20Nginx%20%EA%B8%B0%EC%B4%88.md)
 
 <br>
 

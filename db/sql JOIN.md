@@ -8,7 +8,7 @@
 
 ### INNER JOIN
 
-![image-20220905233522540](C:\Users\SSAFY\AppData\Roaming\Typora\typora-user-images\image-20220905233522540.png)
+![image-20220905233522540](sql JOIN.assets/image-20220905233522540.png)
 
 ```SQL
 SELECT
@@ -29,7 +29,7 @@ INNER JOIN JOIN_TABLE B ON A.NO_EMP = B.NO_EMP
 
 ### LEFT OUTER JOIN
 
-![image-20220905233538357](C:\Users\SSAFY\AppData\Roaming\Typora\typora-user-images\image-20220905233538357.png)
+![image-20220905233538357](sql JOIN.assets/image-20220905233538357.png)
 
 ```SQL
 SELECT
@@ -51,7 +51,7 @@ LEFT OUTER JOIN JOIN_TABLE B ON A.NO_EMP = B.NO_EMP
 
 ### RIGHT OUTER JOIN
 
-![image-20220905233645252](C:\Users\SSAFY\AppData\Roaming\Typora\typora-user-images\image-20220905233645252.png)
+![image-20220905233645252](sql JOIN.assets/image-20220905233645252.png)
 
 ```SQL
 SELECT
@@ -72,7 +72,7 @@ RIGHT OUTER JOIN JOIN_TABLE B ON A.NO_EMP = B.NO_EMP
 
 ### FULL OUTER JOIN
 
-![image-20220905233736796](C:\Users\SSAFY\AppData\Roaming\Typora\typora-user-images\image-20220905233736796.png)
+![image-20220905233736796](sql JOIN.assets/image-20220905233736796.png)
 
 ```SQL
 SELECT

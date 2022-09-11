@@ -164,13 +164,18 @@
 
 
 
-## 📂 SQL
+## 📂 DB
 
-- [sql 기초](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EA%B8%B0%EC%B4%88.md)
-- [sql 문법 - Insert, Select, Limit, Offset, Distinct, Update](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EB%AC%B8%EB%B2%95.md)
-- [sql 문법 - csv 파일 적용, Where, Aggregate, Like, Order By, Group By, ALTER](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EB%AC%B8%EB%B2%95%202.md)
+- [SQL 기초](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EA%B8%B0%EC%B4%88.md)
+- [SQL 문법 - Insert, Select, Limit, Offset, Distinct, Update](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EB%AC%B8%EB%B2%95.md)
+- [SQL 문법 - csv 파일 적용, Where, Aggregate, Like, Order By, Group By, ALTER](https://github.com/letgodchan0/TIL/blob/main/db/sql%20%EB%AC%B8%EB%B2%95%202.md)
+- [SQL 문법 - Join](https://github.com/letgodchan0/TIL/blob/main/db/sql%20JOIN.md)
 - [위의 내용 요약](https://github.com/letgodchan0/TIL/blob/main/db/SQL_digest.md)
-- [sql_연습](https://github.com/letgodchan0/TIL/blob/main/db/SQL_ORM_%EC%97%B0%EC%8A%B5.md)
+- [SQL 연습](https://github.com/letgodchan0/TIL/blob/main/db/SQL_ORM_%EC%97%B0%EC%8A%B5.md)
+- [SQL injection](https://github.com/letgodchan0/TIL/blob/main/db/SQL%20Injection.md)
+- [SQL vs NoSQL](https://github.com/letgodchan0/TIL/blob/main/db/SQL%20vs%20NoSQL.md)
+- [Anomaly](https://github.com/letgodchan0/TIL/blob/main/db/Anomaly.md)
+- [Index](https://github.com/letgodchan0/TIL/blob/main/db/Index.md)
 
 <br>
 

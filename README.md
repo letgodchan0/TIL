@@ -176,6 +176,11 @@
 - [SQL vs NoSQL](https://github.com/letgodchan0/TIL/blob/main/db/SQL%20vs%20NoSQL.md)
 - [Anomaly](https://github.com/letgodchan0/TIL/blob/main/db/Anomaly.md)
 - [Index](https://github.com/letgodchan0/TIL/blob/main/db/Index.md)
+- [정규화](https://github.com/letgodchan0/TIL/blob/main/db/%EC%A0%95%EA%B7%9C%ED%99%94(Normalization).md)
+- [Redis](https://github.com/letgodchan0/TIL/blob/main/db/Redis.md)
+- [DB 트랜잭션](https://github.com/letgodchan0/TIL/blob/main/db/DB%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20(Transaction).md)
+- [DB 트랜잭션 격리 수준](https://github.com/letgodchan0/TIL/blob/main/db/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EA%B2%A9%EB%A6%AC%20%EC%88%98%EC%A4%80.md)
+- [저장 프로시저](https://github.com/letgodchan0/TIL/blob/main/db/%EC%A0%80%EC%9E%A5%20%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80.md)
 
 <br>
 

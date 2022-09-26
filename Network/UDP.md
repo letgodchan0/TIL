@@ -49,3 +49,51 @@
   - Request에 대한 손실은 Application Layer에서 제어가 가능하다.
   - DNS : port 53번
   - But, TCP를 사용할 때가 있다! 크기가 512(UDP 제한)이 넘을 때, TCP를 사용해야한다.
+
+
+
+
+
+### DNS과 UDP 통신 프로토콜을 사용
+
+DNS는 데이터를 교환하는 경우다.
+
+이때, TCP를 사용하게 되면, 데이터를 송신할 때까지 세션 확립을 위한 처리를 하고, 송신한 데이터가 수신되었는지 점검하는 과정이 필요하므로, Protocol overhead가 UDP에 비해서 큼.
+
+------
+
+
+
+DNS는 Application layer protocol임.
+
+모든 Application layer protocol은 TCP, UDP 중 하나의 Transport layer protocol을 사용해야 함.
+
+(TCP는 reliable, UDP는 not reliable임)
+
+
+
+DNS는 reliable해야할 것 같은데 왜 UDP를 사용할까?
+
+#### 사용하는 이유
+
+1. TCP가 3-way handshake를 사용하는 반면, UDP는 connection 을 유지할 필요가 없음.
+
+2. DNS request는 UDP segment에 꼭 들어갈 정도로 작음.
+
+   > DNS query는 single UDP request와 server로부터의 single UDP reply로 구성되어 있음.
+
+3. UDP는 not reliable이나, reliability는 application layer에 추가될 수 있음. (Timeout 추가나, resend 작업을 통해)
+
+DNS는 UDP를 53번 port에서 사용함.
+
+------
+
+
+
+그러나 TCP를 사용하는 경우가 있음.
+
+Zone transfer 을 사용해야하는 경우에는 TCP를 사용해야 함.
+
+(Zone Transfer : DNS 서버 간의 요청을 주고 받을 떄 사용하는 transfer)
+
+만약에 데이터가 512 bytes를 넘거나, 응답을 못받은 경우 TCP로 함.

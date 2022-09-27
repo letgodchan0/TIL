@@ -50,9 +50,7 @@
   - DNS : port 53번
   - But, TCP를 사용할 때가 있다! 크기가 512(UDP 제한)이 넘을 때, TCP를 사용해야한다.
 
-
-
-
+<br>
 
 ### DNS과 UDP 통신 프로토콜을 사용
 
@@ -73,6 +71,8 @@ DNS는 Application layer protocol임.
 
 
 DNS는 reliable해야할 것 같은데 왜 UDP를 사용할까?
+
+<br>
 
 #### 사용하는 이유
 
@@ -97,3 +97,18 @@ Zone transfer 을 사용해야하는 경우에는 TCP를 사용해야 함.
 (Zone Transfer : DNS 서버 간의 요청을 주고 받을 떄 사용하는 transfer)
 
 만약에 데이터가 512 bytes를 넘거나, 응답을 못받은 경우 TCP로 함.
+
+<br>
+
+### UDP checksum
+
+>UDP segment header에 보면 checksum 이라는 항목이 있다. 이것은 전송된 segment의 에러를 탐지하기 위한 것이다.
+
+- 도착 IP주소, 송신 포트번호, 수신 포트번호, 데이터 길이, payload 등의 데이터들을 16비트 단위로 쪼개서 전부 더한다.
+- 만약 더하는 도중 overflow되서 carry-out된 값이 있다면 결과에 다시 더해서 sum 값을 만든다.
+- 계산한 sum 값을 1의 보수를 취하면 checksum 값이 된다.
+
+이렇게 계산한 checksum 값을 송신측에서 checksum 영역에 넣어서 송신측에 보내면 송신측도 마찬가지로 sum값을 구하고, checksum 값을 구해서 송신측에서 보낸 checksum 과 동일한지 확인한다. 만약 동일하다면 에러가 없는 것이고 동일하지 않다면 에러가 있다는 것을 확인 할 수 있다. 
+
+하지만 이 방법에는 결함이 있다. 전송 도중 checksum값이 바뀔 수도 있고 데이터가 변형되었음에도 불구하고 checksum 값이 동일한 경우도 발생할 수 있다. 
+

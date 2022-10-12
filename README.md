@@ -203,5 +203,6 @@
     - [이진 트리, 순회, max heap, min heap](https://github.com/letgodchan0/TIL/blob/main/aps/Tree%201.md)
 - Graph
     - [그래프 탐색 - BFS & DFS](https://github.com/letgodchan0/TIL/blob/main/aps/BFS%20%26%20DFS.md)
+    - [Union & Find](https://github.com/letgodchan0/TIL/blob/main/aps/%EC%84%9C%EB%A1%9C%EC%86%8C%20%EC%A7%91%ED%95%A9.md)
     - [그래프 최소 비용 - MST](https://github.com/letgodchan0/TIL/blob/main/aps/MST.md)
     - [그래프 최단 경로 - 다익스트라](https://github.com/letgodchan0/TIL/blob/main/aps/dijkstra.md)

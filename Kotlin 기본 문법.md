@@ -193,3 +193,123 @@ arrayList.set(0, 15)
 
 <br>
 
+### 6. 반복문
+
+#### - for문
+
+```kotlin
+fun forAndWhile(){
+    val students = arrayListOf("joyce", "james", "jenny", "jennifer")
+    
+    for (name in students) {
+        println("${name}") // 그냥 name도 가능!
+    }
+    for ((index, name) in students.withIndex()){
+        println("${index+1}번째 학생 : ${name}")
+    }
+}
+```
+
+- 노멀한 for 문!
+- `withIndex()` : 파이썬 enumerate 같은거!
+
+<br>
+
+```kotlin
+var sum : Int = 0
+// for (i in 1 until 10) 
+for (i in 1..10 step 2){
+    sum += i
+}
+```
+
+- 1부터 10까지 2씩 증가하는 for 문
+- `until`은 10을 포함하지 않고, 1부터 9까지만!
+
+<br>
+
+```kotlin
+var sum : Int = 0
+for (i in 10 downTo 1){
+    sum += i
+}
+```
+
+- 10부터 1까지 감소하는 for 문
+
+<br>
+
+#### - while문
+
+```kotlin
+var index = 0
+while (index < 10){
+    println("current index : ${index}")
+    index += 1
+}
+```
+
+<br>
+
+### 7. NonNull과 Nullable
+
+```kotlin
+fun nullCheck(){
+    var name = "letgodchan0"
+    var nameInUpperCase = name.toUpperCase() // 대문자로 바꿔주는 메서드 같은거!
+    
+    var nullName : String? = null  // ?를 같이 넣어줘야 nullable 타입이된다!!
+    var nullNameInUpperCase = nullName?.toUpperCase()
+}
+```
+
+- NPE : NULL pointer Exception - 자바에서는 컴파일 시점에서는 잡을 수 없고, 런타임에서만 잡을 수 있음, 즉 run을 해야만 알 수 있음!
+  - kotlin에서는 컴파일 시점에서 잡아줌!! 그게 바로 `?`
+  - `?` 앞에 타입을 꼭 넣어주긴 해야함!
+- `var nullNameInUpperCase = nullName?.toUpperCase()` : 만약 nullName이 null 이 아니면, toUpperCase를 하고 null이라면, 바로 null을 반환함, 타입도 null로!!
+
+<br>
+
+#### - 엘비스 연산자 (?:)
+
+```kotlin
+fun nullCheck(){
+    var name = "letgodchan0"
+    val lastName : String? = null
+    
+    val fullName = name + " " + (lastName?: "No lastName")
+}
+```
+
+- `?:` lastName이 있으면 lastName을 출력하고, null이라면 뒤에를 출력해라! 즉 디폴트 값을 준거임
+
+<br>
+
+#### - null 아니야 (!!)
+
+```kotlin
+fun ignoreNulls(str : String?){
+    var mNotNull : String = str!!
+}
+```
+
+- 인자로 어떤 값을 받을 때, null을 받을 수도 있잖아!!
+- 근데 만약에, 인자로 들어오는 값이 절대로 null 아니라고 말해주고 싶을 때 `!!`을 사용!!
+- 컴파일한테 이거 null 아니라고 말해주는 것!!
+
+<br>
+
+#### - let
+
+```kotlin
+val email : String? = "abcdefgXXXX@naver.com"
+email?.let{
+    println("my email is ${email}")
+}
+```
+
+- `email?.let` : email이 null 아니면, let 안에 있는 걸 해라!!
+- `let` : 자신의 리시버 객체를 람다식 안으로 옮겨서 실행하는 구문! 즉, email이 null 아니라면 let 내부에서 email이 사용 가능
+
+<br>
+

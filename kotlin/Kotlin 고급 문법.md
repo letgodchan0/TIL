@@ -115,7 +115,109 @@ val lamda = {number : Double ->
 }
 
 println(invokeLamda(lamda)) // false를 반환
+println(invokeLamda(true)) // 얘도 가능
+println(invokeLamda({it > 3.22}))  // 파라미터가 1개일 때 it이 그것을 가리킴! 
+print(invokeLamda { it > 3.22 }) // 마지막 파라미터가 람다식 일 때 이런식으로도 작성 가능
 ```
 
 - double을 받고 boolean을 리턴하는 람다를 파라미터로 받음
 - `invokeLamda`는 boolean을 리턴하고, 인자로 boolean을 리턴하는 람다를 받는다.
+
+<br>
+
+### 2. Data class
+
+```kotlin
+data class Ticket(val companyName : String, val name : String, var date : String, var seatNumber : Int)
+class TicketNormal(val companyName : String, val name : String, var date : String, var seatNumber : Int)
+
+fun main(){
+    val ticketA = Ticket("google", "kim", "2022-10-18", 5)
+    val ticketB = TicketNormal("google", "kim", "2022-10-18", 5)
+
+    println(ticketA)
+    println(ticketB)
+}
+```
+
+- data class를 만들어 주면, `toString(), hashCode(), equals(), copy()` 등을 자동으로 만들어 준다.
+- 그냥 클래스와 차이점을 보면 출력했을 때 각각 다음과 같다.
+  - data class : `Ticket(companyName=google, name=kim, date=2022-10-18, seatNumber=5)`
+  - class : `com.example.kotlinpractice.TicketNormal@2812cbfa`
+
+<br>
+
+### 3. Companion object
+
+```kotlin
+class Book private constructor(val id : Int, val name : String){
+    companion object {
+        
+        val myBook = "new book"
+        
+        fun create() = Book(0, myBook)
+    }
+}
+fun main(){
+    val book = Book.Companion.create() // 여기서 Companion 생략가능!, Book.create()로!
+}
+```
+
+- private으로 클래스를 생성할 때 `companion object`를 생성해주어야한다. 그렇지 않으면 객체 생성 못함! 객체 생성 방식도 위와 같다.
+
+- `companion object`는 자바의 static 대신 사용되는 것으로, 정적 메소드나 정적 변수를 선언할 때 사용하는 것, 프라이빗 프로퍼티나 메소드를 읽어올 수 있게끔 하는 것!
+
+<br>
+
+```kotlin
+// companion object의 인터페이스 상속
+
+interface IdProvider {
+    fun getId() : Int
+}
+
+class Book private constructor(val id : Int, val name : String){
+
+    // 상속 부분
+    companion object BookFactory : IdProvider{
+        // 인터페이스니까 오버라이딩
+        override fun getId(): Int {
+            return 123
+        }
+        fun create() = Book(getId(), "animal farm")
+    }
+}
+
+val bookId = Book.getId()
+val bookId = Book.BookFactory.getId()
+```
+
+<br>
+
+### 4. Object 클래스
+
+```kotlin
+//Singleton Pattern
+object CarFactory {
+    val cars = mutableListOf<Car>()
+    fun makeCar(horsePower : Int) : Car {
+        val car = Car(horsePower)
+        cars.add(car)
+        return car
+    }
+}
+
+data class Car(val horsePower : Int)
+
+fun main() {
+    val car = CarFactory.makeCar(10)
+    val car2 = CarFactory.makeCar(200)
+
+    println(car)
+    println(car2)
+    println(CarFactory.cars.size.toString())
+}
+```
+
+- object가 다른 클래스와 다른 점 : CarFactory 객체는 모든 앱을 실행할 때 딱 한번 만들어지는 싱글턴 패턴을 적용한 것임
+- 실행할 때 딱 한번만 객체를 생성하고 다시는 객체를 생성하지 않기 때문에 불필요하게 메모리가 사용되는 것을 방지

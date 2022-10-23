@@ -1,2 +1,3 @@
 - [Java 컴파일 과정](https://github.com/letgodchan0/TIL/blob/main/Java/Java%20%EA%B5%AC%EC%A1%B0/JAVA%20%EC%BB%B4%ED%8C%8C%EC%9D%BC%20%EA%B3%BC%EC%A0%95.md)
 - [Java call by](https://github.com/letgodchan0/TIL/blob/main/Java/Java%20%EA%B5%AC%EC%A1%B0/Java%20call%20by.md)
+- [JVM](https://github.com/letgodchan0/TIL/blob/main/Java/Java%20%EA%B5%AC%EC%A1%B0/Java%20Virtual%20Machine.md)

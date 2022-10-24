@@ -45,6 +45,8 @@
 - [kotlin 기본 문법 / 반복문까지!](https://github.com/letgodchan0/TIL/blob/main/kotlin/Kotlin%20%EA%B8%B0%EB%B3%B8%20%EB%AC%B8%EB%B2%95.md)
 - [kotlin 클래스 / 프로퍼티, 생성자, 상속](https://github.com/letgodchan0/TIL/blob/main/kotlin/Kotlin%20%ED%81%B4%EB%9E%98%EC%8A%A4.md)
 - [kotlin 고급 문법 / 람다, data class, object class, companion object](https://github.com/letgodchan0/TIL/blob/main/kotlin/Kotlin%20%EA%B3%A0%EA%B8%89%20%EB%AC%B8%EB%B2%95.md)
+- [kotlin 형변환, Map, List](https://github.com/letgodchan0/TIL/blob/main/kotlin/kotlin%20%EA%B7%B8%EB%B0%96%EC%97%90.md)
+- [kotlin으로 crud 구현](https://github.com/letgodchan0/TIL/blob/main/kotlin/kotlin%EC%9C%BC%EB%A1%9C%20crud%20%EA%B5%AC%ED%98%84.md)
 
 <br>
 

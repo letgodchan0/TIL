@@ -20,6 +20,32 @@
 
 ### 3. WAS(Web Application Server)
 
+> DB 조회나 다양한 로직 처리를 요구하는 동적인 컨텐츠를 제공하기 위해 만들어진 Application Server
+
 웹 페이지는 정적 컨텐츠와 동적 컨텐츠가 모두 존재한다. 사용자의 요청에 맞게 적절한 동적 컨텐츠를 만들어서 제공해야 하지만, 웹서버만을 이용한다면 사용자가 원하는 요청에 대한 결과값을 모두 미리 만들어놓아야 한다. 그러나 이렇게 하기에는 자원이 절대적으로 부족하기에 WAS를 통해 요청에 맞는 데이터를 DB에서 가져와서 그때 그때 결과를 만들어 제공함으로써 자원을 효율적으로 사용할 수 있다.
 
 톰캣(Apache Tomcat)은 대표적인 WAS 중 하나로, JSP 페이지의 실행환경을 제공하는 웹 어플리케이션 서버이다. 톰캣은 자바코드를 이용해 HTML 페이지를 동적으로 생성한다. 웹 컨테이너(Web Container) 또는 서블릿 컨테이너(Servlet Container)라고도 한다.
+
+<br>
+
+##### - 웹 서버와 WAS를 분리하는 이유
+
+WAS는 기본적으로 동적 컨텐츠를 제공하기 위해 존재하는 서버이다. DB 조회나 다양한 로직을 처리하느라 바쁜 WAS가 정적 컨텐츠 요청까지 WAS가 처리한다면, 그로 인한 부하가 더 커지게 되고, 수행 속도가 느려져 페이지 노출 시간이 늘어나게 될 것이다. 따라서 단순 정적 컨텐츠는 웹서버에서 빠르게 클라이언트에게 제공하도록 기능을 분리하는 것이 좋다.
+
+즉, **자원 이용의 효율성 및 장애 극복, 배포 및 유지보수의 편의성을 위해 Web Server와 WAS를 분리**한다.
+
+<br>
+
+#### - Dispatcher Servlet
+
+>  Dispatcher Servlet은 클라이언트의 모든 요청을 한 곳으로 받아서 처리합니다. 요청에 맞는 Handler로 요청을 전달하고 실행결과를 Http Response 형태로 만들어서 반환합니다.
+
+![image-20221028044812871](Springboot 동작 원리.assets/image-20221028044812871.png)
+
+Spring MVC에서는 위와 같은 구조를 가진다. 클라이언트의 요청을 DispatcherServlet이 받아 Handler Mapping이나 Controller에 전달하고 처리된 결과 값을 Model 형태로 받는다. 최종적으로 클라이언트에게 보여주고자 하는 페이지 포맷에 따라 ViewResolver가 페이지(View)를 생성하고 페이지에 Model을 포함시켜 반환하게 된다.(ModelAndView).
+
+<br>
+
+![image-20221028044911343](Springboot 동작 원리.assets/image-20221028044911343.png)
+
+Spring Boot 기반의 RESTful Web Services의 경우, 클라이언트에게 보여지는 형태의 서비스가 아니라 클라이언트의 요청을 JSON 또는 XML 형태의 데이터 포맷으로 반환합니다. 즉, Spring MVC의 View 형태의 페이지를 생성할 필요가 없습니다. 이렇게 클라이언트에게 보여지는 페이지를 가지지 않는 Controller를 REST Controller라고 합니다.

@@ -40,12 +40,14 @@ WAS는 기본적으로 동적 컨텐츠를 제공하기 위해 존재하는 서�
 
 >  Dispatcher Servlet은 클라이언트의 모든 요청을 한 곳으로 받아서 처리합니다. 요청에 맞는 Handler로 요청을 전달하고 실행결과를 Http Response 형태로 만들어서 반환합니다.
 
-![image-20221028044812871](Springboot 동작 원리.assets/image-20221028044812871.png)
+![image-20221028044812871](https://github.com/letgodchan0/TIL/blob/main/contents/springboot/Springboot%20%EB%8F%99%EC%9E%91%20%EC%9B%90%EB%A6%AC.assets/image-20221028044812871.png?raw=true)
 
 Spring MVC에서는 위와 같은 구조를 가진다. 클라이언트의 요청을 DispatcherServlet이 받아 Handler Mapping이나 Controller에 전달하고 처리된 결과 값을 Model 형태로 받는다. 최종적으로 클라이언트에게 보여주고자 하는 페이지 포맷에 따라 ViewResolver가 페이지(View)를 생성하고 페이지에 Model을 포함시켜 반환하게 된다.(ModelAndView).
 
 <br>
 
-![image-20221028044911343](Springboot 동작 원리.assets/image-20221028044911343.png)
+![image-20221028044911343](https://github.com/letgodchan0/TIL/blob/main/contents/springboot/Springboot%20%EB%8F%99%EC%9E%91%20%EC%9B%90%EB%A6%AC.assets/image-20221028044859975.png?raw=true)
 
-Spring Boot 기반의 RESTful Web Services의 경우, 클라이언트에게 보여지는 형태의 서비스가 아니라 클라이언트의 요청을 JSON 또는 XML 형태의 데이터 포맷으로 반환합니다. 즉, Spring MVC의 View 형태의 페이지를 생성할 필요가 없습니다. 이렇게 클라이언트에게 보여지는 페이지를 가지지 않는 Controller를 REST Controller라고 합니다.
+Spring Boot 기반의 RESTful Web Services의 경우, 클라이언트에게 보여지는 형태의 서비스가 아니라 클라이언트의 요청을 JSON 또는 XML 형태의 데이터 포맷으로 반환한다. 즉, Spring MVC의 View 형태의 페이지를 생성할 필요가 없다. 이렇게 클라이언트에게 보여지는 페이지를 가지지 않는 Controller를 REST Controller라고 한다.
+
+<br>

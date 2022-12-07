@@ -72,7 +72,7 @@ CPU를 먼저 요청한 프로세스부터 CPU를 할당하는 스케줄링 방�
 우선순위별로 준비 큐를 여러개 사용하는 스케줄링 방식
 ```
 
-![image-20221204233112775](C:/Users/livem/AppData/Roaming/Typora/typora-user-images/image-20221204233112775.png)
+![image-20221204233112775](%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20CPU%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.assets/image-20221204233112775.png)
 
 우선순위가 가장 높은 큐에 있는 프로세스를 먼저 처리하고, 우선순위가 가장 높은 큐가 비어 있으면 그 다음 우선순위 큐에 있는 프로세스를 처리한다.
 

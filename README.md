@@ -4,48 +4,49 @@
 
 ## 매일 배운 내용 기록하기✏️
 
-### 👉 [블로그](https://velog.io/@letgodchan0)
+
 
 </div>
 
 <br>
 
-### 운영체제
-
-- [운영체제 - 개요](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%EA%B0%9C%EC%9A%94.md)
-- [운영체제 - 커널, 이중 모드, 시스템 호출](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%EA%B0%9C%EB%85%90.md)
-- [운영체제 -  프로세스, PCB, 문맥 교환](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EA%B0%9C%EC%9A%94.md)
-- [운영체제 - 프로세스 상태와 계층 구조](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EC%83%81%ED%83%9C%EC%99%80%20%EA%B3%84%EC%B8%B5%20%EA%B5%AC%EC%A1%B0.md)
-- [운영체제 - 스레드](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%EC%8A%A4%EB%A0%88%EB%93%9C.md)
-- [운영체제 - CPU 스케줄링 개요, 준비 큐, 대기 큐, 선점형 스케줄링, 비선점형 스케줄링](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20CPU%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81%20%EA%B0%9C%EC%9A%94.md)
-- [운영체제 - CPU 스케줄링 알고리즘, 선입 선처리, 최단 작업 우선, 라운드 로빈, 우선순위, 다단계 피드백 큐](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20CPU%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
-- [운영체제 - 프로세스 동기화, 실행 순서 제어, 상호 배제, 공유 자원, 임계 구역](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EB%8F%99%EA%B8%B0%ED%99%94.md)
-- [운영체제 - 동기화 기법, 뮤텍스 락, 세마포, 모니터](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%EB%8F%99%EA%B8%B0%ED%99%94%20%EA%B8%B0%EB%B2%95.md)
-- 운영체제 - 교착상태, 자원 할당 그래프, 교착 상태 발생 조건
-- 운영체제 - 교착 상태 해결 방법, 예방, 회피, 검출 후 회복
-- 운영체제 - 가상 메모리, 스와핑, 메모리 할당, 외부 단편화
-
-<br>
-
-### 컴퓨터 구조
-
-- [컴퓨터 구조 - 개요](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/%5B%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0%5D%20-%20%EA%B0%9C%EC%9A%94.md)
-- [컴퓨터 구조 - 데이터](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/%5B%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0%5D%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0.md)
-- [컴퓨터 구조 - 명령어](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/%5B%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0%5D%20-%20%EB%AA%85%EB%A0%B9%EC%96%B4.md)
-- [컴퓨터 구조 - 명령어의 구조](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/%5B%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0%5D%20-%20%EB%AA%85%EB%A0%B9%EC%96%B4%EC%9D%98%20%EA%B5%AC%EC%A1%B0.md)
-- [컴퓨터 구조 - ALU와 제어장치](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/%5B%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0%5D%20-%20CPU%20%20ALU%EC%99%80%20%EC%A0%9C%EC%96%B4%EC%9E%A5%EC%B9%98.md)
-- [컴퓨터 구조 - 레지스터](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/%5B%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0%5D%20-%20%EB%A0%88%EC%A7%80%EC%8A%A4%ED%84%B0.md)
-- [컴퓨터 구조 - 명령어 사이클과 인터럽트](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/%5B%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0%5D%20-%20%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%82%AC%EC%9D%B4%ED%81%B4%EA%B3%BC%20%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8.md)
+- [**자료구조 & 알고리즘**](#1)
+- [**컴퓨터 구조**](#2)
+- [**운영체제**](#3)
+- [**네트워크**](#4)
+- [**데이터베이스 & SQL**](#5)
+- [**파이썬**](#6)
+- [**자바**](#7)
+- [**코틀린**](#8)
+- [**자바스크립트**](#9)
+- [**Html & CSS & Bootstrap**](#10)
+- [**Django**](#11)
+- [**Vue**](#12)
+- [**Spring Boot**](#13)
+- [**Docker**](#14)
+- [**마크다운 문법**](#15)
+- [**깃 사용법**](#16)
+- [**외부 API 사용법**](#17)
 
 <br>
 
-## 🗞 API
-
-- [📝 영화 API 사용법](https://github.com/letgodchan0/TIL/blob/main/contents/API/%EC%98%81%ED%99%94%20API%20%EC%82%AC%EC%9A%A9%EA%B8%B0.md)
+<br>
 
 <br>
 
-## 🗂 Git
+
+
+<div id="17"></div>
+
+## 외부 API 사용법
+
+- [📝 TMDB API 사용법](https://github.com/letgodchan0/TIL/blob/main/contents/API/%EC%98%81%ED%99%94%20API%20%EC%82%AC%EC%9A%A9%EA%B8%B0.md)
+
+<br>
+
+<div id="16"></div>
+
+## Git
 
 - [Git Init 부터 Git Hub push까지](https://github.com/letgodchan0/TIL/blob/main/contents/git/git_%EA%B8%B0%EC%B4%88.md)
 - [Git branch, switch](https://github.com/letgodchan0/TIL/blob/main/contents/git/01_branch.md)
@@ -56,78 +57,40 @@
 
 <br>
 
-## 📂 Markdown
+<div id="15"></div>
+
+## Markdown
 
 - [마크다운 문법](https://github.com/letgodchan0/TIL/blob/main/contents/markdown/markdown.md)
 
 <br>
 
-### ⛵️ Docker
+
+
+<div id="14"></div>
+
+### Docker
 
 - [도커 기초 및 명령어](https://github.com/letgodchan0/TIL/blob/main/contents/Docker/Docker%20%EA%B8%B0%EC%B4%88.md)
 - [Nginx 기본 개념](https://github.com/letgodchan0/TIL/blob/main/contents/Docker/%E2%9B%B5%EF%B8%8F%20Nginx%20%EA%B8%B0%EC%B4%88.md)
 
 <br>
 
-###  🌻 Kotlin
 
-- [kotlin 기본 문법 / 반복문까지!](https://github.com/letgodchan0/TIL/blob/main/contents/kotlin/Kotlin%20%EA%B8%B0%EB%B3%B8%20%EB%AC%B8%EB%B2%95.md)
-- [kotlin 클래스 / 프로퍼티, 생성자, 상속](https://github.com/letgodchan0/TIL/blob/main/contents/kotlin/Kotlin%20%ED%81%B4%EB%9E%98%EC%8A%A4.md)
-- [kotlin 고급 문법 / 람다, data class, object class, companion object](https://github.com/letgodchan0/TIL/blob/main/contents/kotlin/Kotlin%20%EA%B3%A0%EA%B8%89%20%EB%AC%B8%EB%B2%95.md)
-- [kotlin 형변환, Map, List](https://github.com/letgodchan0/TIL/blob/main/contents/kotlin/kotlin%20%EA%B7%B8%EB%B0%96%EC%97%90.md)
-- [kotlin으로 crud 구현](https://github.com/letgodchan0/TIL/blob/main/contents/kotlin/kotlin%EC%9C%BC%EB%A1%9C%20crud%20%EA%B5%AC%ED%98%84.md)
 
-<br>
+<div id="13"></div>
 
-### 🍀 Spring
+### Spring Boot
 
 - [Springboot 시행착오](https://github.com/letgodchan0/TIL/blob/main/contents/springboot/springboot%20%EC%8B%9C%ED%96%89%EC%B0%A9%EC%98%A4.md)
 
 <br>
 
-## 🧋 Java
 
-- [자바 구조](https://github.com/letgodchan0/TIL/tree/main/contents/Java/Java%20%EA%B5%AC%EC%A1%B0)
 
-- [Java 입출력, 선언, 3항 연산자, 조건문, 반복문](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20%EA%B8%B0%EC%B4%88.md)
-- [Java 배열 기본](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20%EB%B0%B0%EC%97%B4.md)
-- [Java 클래스 기본 및 생성자](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20%ED%81%B4%EB%9E%98%EC%8A%A4.md)
-- [Java 패키지, 상속, 오버라이딩, Object, 다형성](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20%ED%81%B4%EB%9E%98%EC%8A%A42.md)
-- [Java 추상 클래스, 인터페이스](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20%EC%B6%94%EC%83%81%20%ED%81%B4%EB%9E%98%EC%8A%A4.md)
-- [Java 예외처리](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC.md)
-- [Java Collection Framework](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20Collection%20Framework.md)
-  - [ArrayList, LinkedList](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20ArrayList%20LinkedList.md)
-  - [HashSet, TreeSet](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20Set.md)
-  - [HashMap, TreeMap](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20Map.md)
+<div id="12"></div>
 
-<br>
-
-## 🌐 JavaScript
-
-- ### Core
-
-  - [JavaScript - Intro](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20%EA%B8%B0%EC%B4%88.md)
-  - [JavaScript - 변수와 식별자](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/Java%20Script%20%EB%AC%B8%EB%B2%951.md)
-  - [JavaScript - 데이터 타입과 연산자](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/Java%20Script%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%ED%83%80%EC%9E%85%2C%20%EC%97%B0%EC%82%B0%EC%9E%90.md)
-  - [JavaScript - 조건문, 반복문](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/Java%20Script%20-%20%EC%A1%B0%EA%B1%B4%EB%AC%B8%2C%20%EB%B0%98%EB%B3%B5%EB%AC%B8.md)
-  - [JavaScript - 함수](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20%ED%95%A8%EC%88%98.md)
-  - [JavaScript - 문자열](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20(String).md)
-  - [JavaScript - 배열](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20%EB%B0%B0%EC%97%B4.md)
-  - [JavaScript - object, json, lodash](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20Object.md)
-  
-- ### DOM 조작과 Event
-
-  - [JavaScript - DOM 조작](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20DOM%20%EC%A1%B0%EC%9E%91.md)
-  - [JavaScript - Event](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20Event.md)
-  
-- ### Ajax
-
-  - [JavaScript - 비동기 처리 기본](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20AJAX%EA%B8%B0%EC%B4%88.md)
-  - [JavaScript - Promise & Axios](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20Ajax%20(Promise).md)
-
-  <br>
-
-## 🔰 Vue
+## Vue
 
 - [Vue - MVVM 패턴, SPA와 CSR](https://github.com/letgodchan0/TIL/blob/main/contents/vue/Vue%20Intro.md)
 - [Vue - 공식문서 시작하기, 기본 문법](https://github.com/letgodchan0/TIL/blob/main/contents/vue/Vue%20%EC%B0%8D%EC%96%B4%EB%A8%B9%EA%B8%B0.md)
@@ -140,7 +103,9 @@
 
 <br>
 
-## 🪴 Django
+<div id="11"></div>
+
+## Django
 
 - [django - 설치 및 프로젝트&앱 생성, 요청과 응답, Template](https://github.com/letgodchan0/TIL/blob/main/contents/Django/Django%2001.md)
 - [django - HTML_form, Variable Routing, Namespace, Static](https://github.com/letgodchan0/TIL/blob/main/contents/Django/Django%2002.md)
@@ -162,7 +127,9 @@
 
 <br>
 
-## 🌐 Web 기초
+<div id="10"></div>
+
+## Web 기초
 
 - ### HTML
 
@@ -182,12 +149,73 @@
   - [Bootstrap 기본](https://github.com/letgodchan0/TIL/blob/main/contents/Web/Bootstrap/Bootstrap.md)
   - [Bootstrap 그리드](https://github.com/letgodchan0/TIL/blob/main/contents/Web/Bootstrap/Bootstrap_grid_system.md)
 
-  <br>
+
+<br>
+
+<div id="9"></div>
+
+## JavaScript
+
+- ### Core
+
+  - [JavaScript - Intro](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20%EA%B8%B0%EC%B4%88.md)
+  - [JavaScript - 변수와 식별자](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/Java%20Script%20%EB%AC%B8%EB%B2%951.md)
+  - [JavaScript - 데이터 타입과 연산자](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/Java%20Script%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%ED%83%80%EC%9E%85%2C%20%EC%97%B0%EC%82%B0%EC%9E%90.md)
+  - [JavaScript - 조건문, 반복문](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/Java%20Script%20-%20%EC%A1%B0%EA%B1%B4%EB%AC%B8%2C%20%EB%B0%98%EB%B3%B5%EB%AC%B8.md)
+  - [JavaScript - 함수](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20%ED%95%A8%EC%88%98.md)
+  - [JavaScript - 문자열](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20(String).md)
+  - [JavaScript - 배열](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20%EB%B0%B0%EC%97%B4.md)
+  - [JavaScript - object, json, lodash](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20Object.md)
+
+- ### DOM 조작과 Event
+
+  - [JavaScript - DOM 조작](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20DOM%20%EC%A1%B0%EC%9E%91.md)
+  - [JavaScript - Event](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20Event.md)
+
+- ### Ajax
+
+  - [JavaScript - 비동기 처리 기본](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20AJAX%EA%B8%B0%EC%B4%88.md)
+  - [JavaScript - Promise & Axios](https://github.com/letgodchan0/TIL/blob/main/contents/JavaScript/JavaScript%20-%20Ajax%20(Promise).md)
+
+<br>
+
+<div id="8"></div>
+
+###  Kotlin
+
+- [kotlin 기본 문법 / 반복문까지!](https://github.com/letgodchan0/TIL/blob/main/contents/kotlin/Kotlin%20%EA%B8%B0%EB%B3%B8%20%EB%AC%B8%EB%B2%95.md)
+- [kotlin 클래스 / 프로퍼티, 생성자, 상속](https://github.com/letgodchan0/TIL/blob/main/contents/kotlin/Kotlin%20%ED%81%B4%EB%9E%98%EC%8A%A4.md)
+- [kotlin 고급 문법 / 람다, data class, object class, companion object](https://github.com/letgodchan0/TIL/blob/main/contents/kotlin/Kotlin%20%EA%B3%A0%EA%B8%89%20%EB%AC%B8%EB%B2%95.md)
+- [kotlin 형변환, Map, List](https://github.com/letgodchan0/TIL/blob/main/contents/kotlin/kotlin%20%EA%B7%B8%EB%B0%96%EC%97%90.md)
+- [kotlin & spring boot로 crud 구현](https://github.com/letgodchan0/TIL/blob/main/contents/kotlin/kotlin%EC%9C%BC%EB%A1%9C%20crud%20%EA%B5%AC%ED%98%84.md)
+
+<br>
+
+<div id="7"></div>
+
+## Java
+
+- [자바 구조](https://github.com/letgodchan0/TIL/tree/main/contents/Java/Java%20%EA%B5%AC%EC%A1%B0)
+
+- [Java 입출력, 선언, 3항 연산자, 조건문, 반복문](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20%EA%B8%B0%EC%B4%88.md)
+- [Java 배열 기본](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20%EB%B0%B0%EC%97%B4.md)
+- [Java 클래스 기본 및 생성자](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20%ED%81%B4%EB%9E%98%EC%8A%A4.md)
+- [Java 패키지, 상속, 오버라이딩, Object, 다형성](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20%ED%81%B4%EB%9E%98%EC%8A%A42.md)
+- [Java 추상 클래스, 인터페이스](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20%EC%B6%94%EC%83%81%20%ED%81%B4%EB%9E%98%EC%8A%A4.md)
+- [Java 예외처리](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC.md)
+- [Java Collection Framework](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20Collection%20Framework.md)
+  - [ArrayList, LinkedList](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20ArrayList%20LinkedList.md)
+  - [HashSet, TreeSet](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20Set.md)
+  - [HashMap, TreeMap](https://github.com/letgodchan0/TIL/blob/main/contents/Java/Java%20Map.md)
+
+<br>
 
 
 
+<div id="6"></div>
 
-## 📂 Python
+
+## Python
 
 - [파이썬 기초](https://github.com/letgodchan0/TIL/blob/main/contents/python/%ED%8C%8C%EC%9D%B4%EC%8D%AC_%EA%B8%B0%EC%B4%88.md)
 - [파이썬 제어문](https://github.com/letgodchan0/TIL/blob/main/contents/python/%ED%8C%8C%EC%9D%B4%EC%8D%AC_%EC%A0%9C%EC%96%B4%EB%AC%B8.md)
@@ -200,9 +228,9 @@
 
 
 
+<div id="5"></div>
 
-
-## 📂 DB
+## DB & SQL
 
 - [SQL 기초](https://github.com/letgodchan0/TIL/blob/main/contents/db/sql%20%EA%B8%B0%EC%B4%88.md)
 - [SQL 문법 - Insert, Select, Limit, Offset, Distinct, Update](https://github.com/letgodchan0/TIL/blob/main/contents/db/sql%20%EB%AC%B8%EB%B2%95.md)
@@ -222,27 +250,70 @@
 
 <br>
 
-## 📖 자료구조 & 알고리즘
+<div id="4"></div>
 
-- Array
-    - [Array 1 - 버블 정렬, 카운팅 정렬, 완전 탐색, 그리디](https://github.com/letgodchan0/TIL/blob/main/contents/aps/Array%201.md)
-    - [Array 2 - 부분집합 생성, 이진 탐색, 선택 정렬](https://github.com/letgodchan0/TIL/blob/main/contents/aps/Array%202.md)
-- String
-  - [패턴매칭, KMP 알고리즘, 보이어-무어 알고리즘](https://github.com/letgodchan0/TIL/blob/main/contents/aps/String%201.md)
-- Stack
-  - [스택, 재귀호출, Memoization & DP, DFS, 계산기 - 후위표기법](https://github.com/letgodchan0/TIL/blob/main/contents/aps/Stack%201.md)
-- Queue
-    - [선형 큐, 원형 큐, BFS ](https://github.com/letgodchan0/TIL/blob/main/contents/aps/Queue.md)
-- Backtracking
-    - [부분집합, 순열, 조합](https://github.com/letgodchan0/TIL/blob/main/contents/aps/Stack%202.md)
-- Divide and Conquer
-    - [병합정렬, 퀵정렬](https://github.com/letgodchan0/TIL/blob/main/contents/aps/merge%26quick.md)
-- Tree
-    - [이진 트리, 순회, max heap, min heap](https://github.com/letgodchan0/TIL/blob/main/contents/aps/Tree%201.md)
-- Graph
-    - [그래프 탐색 - BFS & DFS](https://github.com/letgodchan0/TIL/blob/main/contents/aps/BFS%20%26%20DFS.md)
-    - [Union & Find](https://github.com/letgodchan0/TIL/blob/main/contents/aps/%EC%84%9C%EB%A1%9C%EC%86%8C%20%EC%A7%91%ED%95%A9.md)
-    - [그래프 최소 비용 - MST](https://github.com/letgodchan0/TIL/blob/main/contents/aps/MST.md)
-    - [그래프 최단 경로 - 다익스트라](https://github.com/letgodchan0/TIL/blob/main/contents/aps/dijkstra.md)
-    - [위상정렬](https://github.com/letgodchan0/TIL/blob/main/contents/aps/%EC%9C%84%EC%83%81%EC%A0%95%EB%A0%AC.md)
+### 네트워크
+
+- [네트워크 - 개요](https://github.com/letgodchan0/TIL/blob/main/contents/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%5B%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%5D%20-%20%EA%B0%9C%EC%9A%94.md)
+
+<br>
+
+<div id="3"></div>
+
+### 운영체제
+
+- [운영체제 - 개요](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%EA%B0%9C%EC%9A%94.md)
+- [운영체제 - 커널, 이중 모드, 시스템 호출](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%EA%B0%9C%EB%85%90.md)
+- [운영체제 -  프로세스, PCB, 문맥 교환](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EA%B0%9C%EC%9A%94.md)
+- [운영체제 - 프로세스 상태와 계층 구조](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EC%83%81%ED%83%9C%EC%99%80%20%EA%B3%84%EC%B8%B5%20%EA%B5%AC%EC%A1%B0.md)
+- [운영체제 - 스레드](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%EC%8A%A4%EB%A0%88%EB%93%9C.md)
+- [운영체제 - CPU 스케줄링 개요, 준비 큐, 대기 큐, 선점형 스케줄링, 비선점형 스케줄링](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20CPU%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81%20%EA%B0%9C%EC%9A%94.md)
+- [운영체제 - CPU 스케줄링 알고리즘, 선입 선처리, 최단 작업 우선, 라운드 로빈, 우선순위, 다단계 피드백 큐](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20CPU%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
+- [운영체제 - 프로세스 동기화, 실행 순서 제어, 상호 배제, 공유 자원, 임계 구역](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EB%8F%99%EA%B8%B0%ED%99%94.md)
+- [운영체제 - 동기화 기법, 뮤텍스 락, 세마포, 모니터](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%EB%8F%99%EA%B8%B0%ED%99%94%20%EA%B8%B0%EB%B2%95.md)
+- [운영체제 - 교착상태, 자원 할당 그래프, 교착 상태 발생 조건](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%EA%B5%90%EC%B0%A9%20%EC%83%81%ED%83%9C.md)
+- [운영체제 - 교착 상태 해결 방법, 예방, 회피, 검출 후 회복](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%EA%B5%90%EC%B0%A9%20%EC%83%81%ED%83%9C%20%ED%95%B4%EA%B2%B0%20%EB%B0%A9%EB%B2%95.md)
+- [운영체제 - 가상 메모리, 스와핑, 메모리 할당, 외부 단편화](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%EA%B0%80%EC%83%81%20%EB%A9%94%EB%AA%A8%EB%A6%AC.md)
+- [운영체제 - 페이징을 통한 가상 메모리 관리](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%5B%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%5D%20-%20%ED%8E%98%EC%9D%B4%EC%A7%95%EC%9D%84%20%ED%86%B5%ED%95%9C%20%EA%B0%80%EC%83%81%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B4%80%EB%A6%AC.md)
+
+<br>
+
+<div id="2"></div>
+
+### 컴퓨터 구조
+
+- [컴퓨터 구조 - 개요](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/%5B%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0%5D%20-%20%EA%B0%9C%EC%9A%94.md)
+- [컴퓨터 구조 - 데이터](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/%5B%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0%5D%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0.md)
+- [컴퓨터 구조 - 명령어](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/%5B%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0%5D%20-%20%EB%AA%85%EB%A0%B9%EC%96%B4.md)
+- [컴퓨터 구조 - 명령어의 구조](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/%5B%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0%5D%20-%20%EB%AA%85%EB%A0%B9%EC%96%B4%EC%9D%98%20%EA%B5%AC%EC%A1%B0.md)
+- [컴퓨터 구조 - ALU와 제어장치](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/%5B%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0%5D%20-%20CPU%20%20ALU%EC%99%80%20%EC%A0%9C%EC%96%B4%EC%9E%A5%EC%B9%98.md)
+- [컴퓨터 구조 - 레지스터](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/%5B%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0%5D%20-%20%EB%A0%88%EC%A7%80%EC%8A%A4%ED%84%B0.md)
+- [컴퓨터 구조 - 명령어 사이클과 인터럽트](https://github.com/letgodchan0/TIL/blob/main/contents/%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B5%AC%EC%A1%B0/%5B%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0%5D%20-%20%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%82%AC%EC%9D%B4%ED%81%B4%EA%B3%BC%20%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8.md)
+
+<br>
+
+<div id="1"></div>
+
+## 자료구조 & 알고리즘
+
+- [Array 1 - 버블 정렬, 카운팅 정렬, 완전 탐색, 그리디](https://github.com/letgodchan0/TIL/blob/main/contents/aps/Array%201.md)
+- [Array 2 - 부분집합 생성, 이진 탐색, 선택 정렬](https://github.com/letgodchan0/TIL/blob/main/contents/aps/Array%202.md)
+
+- [패턴매칭, KMP 알고리즘, 보이어-무어 알고리즘](https://github.com/letgodchan0/TIL/blob/main/contents/aps/String%201.md)
+
+- [스택, 재귀호출, Memoization & DP, DFS, 계산기 - 후위표기법](https://github.com/letgodchan0/TIL/blob/main/contents/aps/Stack%201.md)
+
+- [선형 큐, 원형 큐, BFS ](https://github.com/letgodchan0/TIL/blob/main/contents/aps/Queue.md)
+
+- [부분집합, 순열, 조합](https://github.com/letgodchan0/TIL/blob/main/contents/aps/Stack%202.md)
+
+- [병합정렬, 퀵정렬](https://github.com/letgodchan0/TIL/blob/main/contents/aps/merge%26quick.md)
+
+- [이진 트리, 순회, max heap, min heap](https://github.com/letgodchan0/TIL/blob/main/contents/aps/Tree%201.md)
+
+- [그래프 탐색 - BFS & DFS](https://github.com/letgodchan0/TIL/blob/main/contents/aps/BFS%20%26%20DFS.md)
+- [Union & Find](https://github.com/letgodchan0/TIL/blob/main/contents/aps/%EC%84%9C%EB%A1%9C%EC%86%8C%20%EC%A7%91%ED%95%A9.md)
+- [그래프 최소 비용 - MST](https://github.com/letgodchan0/TIL/blob/main/contents/aps/MST.md)
+- [그래프 최단 경로 - 다익스트라](https://github.com/letgodchan0/TIL/blob/main/contents/aps/dijkstra.md)
+- [위상정렬](https://github.com/letgodchan0/TIL/blob/main/contents/aps/%EC%9C%84%EC%83%81%EC%A0%95%EB%A0%AC.md)
 

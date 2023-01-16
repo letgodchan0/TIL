@@ -256,6 +256,7 @@
 
 - [네트워크 - 개요](https://github.com/letgodchan0/TIL/blob/main/contents/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%5B%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%5D%20-%20%EA%B0%9C%EC%9A%94.md)
 - [네트워크 - TCP/IP, OSI 7 계층, 패킷, 캡슐화](https://github.com/letgodchan0/TIL/blob/main/contents/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%5B%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%5D%20-%20%EB%AA%A8%EB%8D%B8.md)
+- [네트워크 - 2계층, 이더넷 프로토콜](https://github.com/letgodchan0/TIL/blob/main/contents/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%5B%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%5D%20-%202%EA%B3%84%EC%B8%B5.md)
 
 <br>
 

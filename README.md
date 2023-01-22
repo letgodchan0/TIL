@@ -301,7 +301,7 @@
 
 <div id="1"></div>
 
-## 자료구조 & 알고리즘
+### 자료구조 & 알고리즘
 
 - [Array 1 - 버블 정렬, 카운팅 정렬, 완전 탐색, 그리디](https://github.com/letgodchan0/TIL/blob/main/contents/aps/Array%201.md)
 - [Array 2 - 부분집합 생성, 이진 탐색, 선택 정렬](https://github.com/letgodchan0/TIL/blob/main/contents/aps/Array%202.md)

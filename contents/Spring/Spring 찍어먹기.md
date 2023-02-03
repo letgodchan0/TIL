@@ -8,7 +8,7 @@
 
 ##### 1. [여기서 편하게 생성할 수 있다!](https://start.spring.io/) - spring 관련 프로젝트를 만들어 주는 사이트
 
-![image-20230202200156157](C:/Users/livem/AppData/Roaming/Typora/typora-user-images/image-20230202200156157.png)
+![image-20230203120056349](Spring%20%EC%B0%8D%EC%96%B4%EB%A8%B9%EA%B8%B0.assets/image-20230203120056349.png)
 
 <br>
 

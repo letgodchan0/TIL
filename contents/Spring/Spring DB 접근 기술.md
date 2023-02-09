@@ -13,7 +13,7 @@
 h2.bat  // 실행하면 아래와 같은 화면이 브라우저로 띄워짐
 ```
 
-![image-20230206115104923](C:/Users/livem/Desktop/letgodchan0/TIL/contents/Spring/Spring%20%ED%9A%8C%EC%9B%90%20%EA%B4%80%EB%A0%A8%20%EA%B0%84%EB%8B%A8%ED%95%9C%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B0%9C%EB%B0%9C.assets/image-20230206115104923.png)
+![image-20230206115104923](Spring%20DB%20%EC%A0%91%EA%B7%BC%20%EA%B8%B0%EC%88%A0.assets/image-20230206115104923.png)
 
 - 한번 연결하고 이후 `JDBC URL`은 jdbc:h2:tcp://localhost/~/test 로 설정하고 연결한다!
 

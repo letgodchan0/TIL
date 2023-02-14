@@ -75,7 +75,7 @@
 ### - 빌드하고 실행하기
 
 1. IDE 끄고 실행
-2. cme에서 실행
+2. cmd에서 실행
 
 ```bash
 gradlew // build하기

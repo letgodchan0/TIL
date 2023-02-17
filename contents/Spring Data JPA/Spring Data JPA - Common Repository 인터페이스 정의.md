@@ -6,7 +6,7 @@
 
 <br>
 
-![image-20230217141724699](C:/Users/livem/AppData/Roaming/Typora/typora-user-images/image-20230217141724699.png)
+![image-20230217141724699](Spring%20Data%20JPA%20-%20Common%20Repository%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%20%EC%A0%95%EC%9D%98.assets/image-20230217141724699.png)
 
 <br>
 

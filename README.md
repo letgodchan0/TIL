@@ -81,7 +81,21 @@
 
 ## Spring Data Jpa
 
+#### - 핵심 개념
 
+- [ORM 개요 및 패러다임 불일치](https://github.com/letgodchan0/TIL/blob/main/contents/Spring%20Data%20JPA/Spring%20Data%20JPA%20-%20ORM.md)
+- [Spring Data JPA - 프로젝트 세팅](https://github.com/letgodchan0/TIL/blob/main/contents/Spring%20Data%20JPA/Spring%20Data%20JPA%20-%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%84%B8%ED%8C%85.md)
+- [Spring Data JPA - 엔티티 매핑](https://github.com/letgodchan0/TIL/blob/main/contents/Spring%20Data%20JPA/Spring%20Data%20JPA%20-%20%EC%97%94%ED%8B%B0%ED%8B%B0%20%EB%A7%A4%ED%95%91.md)
+- [Spring Data JPA - Value 매핑](https://github.com/letgodchan0/TIL/blob/main/contents/Spring%20Data%20JPA/Spring%20Data%20JPA%20-%20Value%20%ED%83%80%EC%9E%85%20%EB%A7%A4%ED%95%91.md)
+- [Spring Data JPA - 관계 매핑](https://github.com/letgodchan0/TIL/blob/main/contents/Spring%20Data%20JPA/Spring%20Data%20JPA%20-%20%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91.md)
+- [Spring Data JPA - Cascade](https://github.com/letgodchan0/TIL/blob/main/contents/Spring%20Data%20JPA/Spring%20Data%20JPA%20-%20%EC%97%94%ED%8B%B0%ED%8B%B0%20%EC%83%81%ED%83%9C%EC%99%80%20Cascade.md)
+- [Spring Data JPA - Fetch](https://github.com/letgodchan0/TIL/blob/main/contents/Spring%20Data%20JPA/Spring%20Data%20JPA%20-%20Fetch.md)
+- [Spring Data JPA - Query](https://github.com/letgodchan0/TIL/blob/main/contents/Spring%20Data%20JPA/Spring%20Data%20JPA%20-%20Query.md)
+
+#### - Common
+
+- [인터페이스 정의](https://github.com/letgodchan0/TIL/blob/main/contents/Spring%20Data%20JPA/Spring%20Data%20JPA%20-%20Common%20Repository%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%20%EC%A0%95%EC%9D%98.md)
+- [Null 처리](https://github.com/letgodchan0/TIL/blob/main/contents/Spring%20Data%20JPA/Spring%20Data%20JPA%20-%20Common%20Null%20%EC%B2%98%EB%A6%AC.md)
 
 <br>
 
